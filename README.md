@@ -44,7 +44,7 @@ An Operative System is a system software that manages computer hardware, softwar
  Docker uses a client-server architecture. The client talks to the ```docker daemon```, which does the heavy lifting of building, running and distributing your ```docker conatiner```.
  The client and the daemon can run on the same system, or you can connecr a docker client to a remote docker daemon.
  They communicate using ```REST API```, over UNIX sockets on a network interface.
- (https://docs.docker.com/engine/images/architecture.svg)
+ ![image](https://docs.docker.com/engine/images/architecture.svg)
 ### Docker Daemon
  The Docker Daemon ```(dockerd)``` listens for docker API requests and manages docker objects such as ```images```, ```containers```, ```networks```, and ```volumes```.
  A daemon can also communicate with other daemons to manage Docker services.
