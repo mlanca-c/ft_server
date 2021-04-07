@@ -6,8 +6,8 @@
 	* [Keywords](https://github.com/mlanca-c/ft_server#Keywords)
 2. [Docker](https://github.com/mlanca-c/ft_server#Docker)
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
-3. [Debian Buster](https://github.com/mlanca-c/ft_server#Deiban-Buster)
-	* [What is a OS?](https://github.com/mlanca-c/ft_server#What-is-a-OS?)
+3. [What is a OS?](https://github.com/mlanca-c/ft_server#What-is-a-OS?)
+	* [Debian Buster](https://github.com/mlanca-c/ft_server#Deiban-Buster)
 # Intro
  > [subject](subject.pdf)
 
@@ -53,5 +53,22 @@ This is a System Administration subject. You will discover Docker and you will s
  |Containers sit on top of a physical server and its host OS—for example, Linux or Windows. Each container shares the host OS kernel and, usually, the binaries and libraries, too. Shared components are read-only. Containers are thus exceptionally “light”—they are only megabytes in size and take just seconds to start, versus gigabytes and minutes for a VM.|Designed by running software on top of physical servers to emulate a particular hardware system. A hypervisor, or a virtual machine monitor, is software, firmware, or hardware that creates and runs VMs. It’s what sits between the hardware and the virtual machine and is necessary to virtualize the server.Within each virtual machine runs a unique guest operating system. VMs with different operating systems can run on the same physical server—a UNIX VM can sit alongside a Linux VM, and so on. Each VM has its own binaries, libraries, and applications that it services, and the VM may be many gigabytes in size. Virtual machines and containers differ in several ways, but the primary difference is that containers provide a way to virtualize an OS so that multiple workloads can run on a single OS instance. With VMs, the hardware is being virtualized to run multiple OS instances. Containers’ speed, agility, and portability make them yet another tool to help streamline software development.|
 
  ![image2](https://blog.netapp.com/wp-content/uploads/2016/03/Screen-Shot-2018-03-20-at-9.24.09-AM.png)
-# Debian Buster
-## What is a OS?
+
+# What is a OS?
+
+## Debian Buster
+ You can install Docker Engine in different ways, depending on your needs:
+ * Most users set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach, except for Raspbian.
+ * Some users download the DEB package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
+ * In testing and development environments, some users choose to use automated convenience scripts to install Docker. This is currently the only approach for Raspbian.
+
+###Set up repositoriy:
+ 1. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
+ ```$ sudo apt-get update
+
+ $ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release```
