@@ -73,4 +73,5 @@ This is a System Administration subject. You will discover Docker and you will s
     ca-certificates \
     curl \
     gnupg \
-    lsb-release```
+    lsb-release
+ ```
