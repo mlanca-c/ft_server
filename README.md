@@ -7,7 +7,7 @@
 2. [Docker](https://github.com/mlanca-c/ft_server#Docker)
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
 3. [What is a OS?](https://github.com/mlanca-c/ft_server#What-is-a-OS?)
-	* [Debian Buster](https://github.com/mlanca-c/ft_server#Deiban-Buster)
+	* [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
 # Intro
  > [subject](subject.pdf)
 
