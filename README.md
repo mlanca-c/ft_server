@@ -62,7 +62,7 @@ This is a System Administration subject. You will discover Docker and you will s
  * Some users download the DEB package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
  * In testing and development environments, some users choose to use automated convenience scripts to install Docker. This is currently the only approach for Raspbian.
 
-###Set up repositoriy:
+### Set up repositoriy:
  1. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
  ```$ sudo apt-get update
 
