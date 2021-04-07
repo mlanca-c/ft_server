@@ -8,24 +8,35 @@
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
 # Intro
  > [subject](subject.pdf)
- This is a System Administration subject. You will discover Docker and you will set up your first web server.
+
+This is a System Administration subject. You will discover Docker and you will set up your first web server.
  Objectives:
  * Using Docker, set up a web server with Nginx on Deiban Buster.
  * Run several services at the same time: WordPress website, phpMyAdmin, and MySQL.
  * Apply SSL protocol.
  * Apply autoindex.
 ## Keywords
- > [Docker](https://github.com/mlanca-c/ft_server#Docker)
+ > [Docker](https://docs.docker.com/get-started/overview/)
 
  > [Web Server?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
 
- > [Operative System: Debian Buster](https://www.debian.org/doc/)
-system software that manages computer hardware, software resources, and provides common services for computer programs (ex: Linux, Windows, etc).
+ > [Dockerfile](https://docs.docker.com/engine/reference/builder/): 
 
- > [HTTP server: Nginx](https://nginx.org/en/docs/)
+ > Operative System: [Debian Buster](https://www.debian.org/doc/)
+
+An Operative System is a system software that manages computer hardware, software resources, and provides common services for computer programs (ex: Linux, Windows, etc).
+
+ > HTTP server: [Nginx](https://nginx.org/en/docs/)
 
  > [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html)
 
+ > [WordPress](https://codex.wordpress.org/Main_Page)
+
+ > [phpMyAdmin](https://www.phpmyadmin.net/docs/)
+
+ > [MySQL](https://dev.mysql.com/doc/)
+
+ > [autoindex]()
 
 # Docker
  * [Dockerdocs](https://docs.docker.com/get-started/overview/)
