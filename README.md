@@ -3,24 +3,29 @@
 
 ## Contents
 1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
+	* [Keywords](https://github.com/mlanca-c/ft_server#Keywords)
 2. [Docker](https://github.com/mlanca-c/ft_server#Docker)
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
 # Intro
+ > [subject](subject.pdf)
  This is a System Administration subject. You will discover Docker and you will set up your first web server.
  Objectives:
  * Using Docker, set up a web server with Nginx on Deiban Buster.
  * Run several services at the same time: WordPress website, phpMyAdmin, and MySQL.
  * Apply SSL protocol.
  * Apply autoindex.
+## Keywords
+ > [Docker](https://github.com/mlanca-c/ft_server#Docker)
 
-> [Operative System: Debian Buster](https://www.debian.org/doc/)
+ > [Web Server?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
+
+ > [Operative System: Debian Buster](https://www.debian.org/doc/)
 system software that manages computer hardware, software resources, and provides common services for computer programs (ex: Linux, Windows, etc).
 
-> [HTTP server: Nginx](https://nginx.org/en/docs/)
+ > [HTTP server: Nginx](https://nginx.org/en/docs/)
 
-> [what is a web server?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
+ > [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html)
 
-> [subject](subject.pdf)
 
 # Docker
  * [Dockerdocs](https://docs.docker.com/get-started/overview/)
