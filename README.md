@@ -41,7 +41,6 @@ This is a System Administration subject. You will discover Docker and you will s
  When you use the ```docker pull``` or ```docker run``` commands, the required images are pulled from your configured registry. When you use ```docker push``` command, your image is pushed to your configured registry.
 
 ### Docker Objects
- ------------
  When you use Docker, you are creating and using images, containers, networks, volumes, plugins, and other objects. This section is a brief overview of some of those objects.
  |Objects		|Description|
  |:------------:|:---------:|
