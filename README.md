@@ -6,7 +6,7 @@
 2. [Docker](https://github.com/mlanca-c/ft_server#Docker)
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
 
-> [subject] (subject.pdf)
+> [subject](subject.pdf)
 # ft_server
 The goal of ft_server is to create a web server with Nginx capable of running a WordPress website, phpMyAdmin, and a MySQL database. This server will run in only one Docker container, under Debian Buster.
 
