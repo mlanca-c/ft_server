@@ -46,6 +46,11 @@ This is a System Administration subject. You will discover Docker and you will s
  |:------------:|:---------:|
  |Images		|An image is a read-only template with instructions for creating a Docker container. You might create your own images or you might only use those created by others and published in a registry. To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image.|
  |Containers	|A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state. A container is defined by its image as well as any configuration options you provide to it when you create or start it.|
+
+### Containers vs. VM
+ |Containers	|Virtual Machines|
+ |:------------:|:--------------:|
+ |Containers sit on top of a physical server and its host OS—for example, Linux or Windows. Each container shares the host OS kernel and, usually, the binaries and libraries, too. Shared components are read-only. Containers are thus exceptionally “light”—they are only megabytes in size and take just seconds to start, versus gigabytes and minutes for a VM.|teste|
+
 # Debian Buster
 ## What is a OS?
-
