@@ -1,7 +1,7 @@
 # ft_server
   42Cursus-ft_server/42Lisboa
 
-## Contents
+# Contents
 1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
 	* [Keywords](https://github.com/mlanca-c/ft_server#Keywords)
 2. [Docker](https://github.com/mlanca-c/ft_server#Docker)
@@ -16,27 +16,7 @@ This is a System Administration subject. You will discover Docker and you will s
  * Apply ```SSL``` protocol.
  * Apply ```autoindex```.
 ## Keywords
- > [Docker](https://docs.docker.com/get-started/overview/)
-
- > [Web Server?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
-
- > [Dockerfile](https://docs.docker.com/engine/reference/builder/): 
-
- > Operative System: [Debian Buster](https://www.debian.org/doc/)
-
-An Operative System is a system software that manages computer hardware, software resources, and provides common services for computer programs (ex: Linux, Windows, etc).
-
- > HTTP server: [Nginx](https://nginx.org/en/docs/)
-
- > [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html)
-
- > [WordPress](https://codex.wordpress.org/Main_Page)
-
- > [phpMyAdmin](https://www.phpmyadmin.net/docs/)
-
- > [MySQL](https://dev.mysql.com/doc/)
-
- > [autoindex]()
+ > [Docker](https://docs.docker.com/get-started/overview/), [Web Server?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server), [Dockerfile](https://docs.docker.com/engine/reference/builder/), Operative System: [Debian Buster](https://www.debian.org/doc/), HTTP server: [Nginx](https://nginx.org/en/docs/), [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html), [WordPress](https://codex.wordpress.org/Main_Page), [phpMyAdmin](https://www.phpmyadmin.net/docs/), [MySQL](https://dev.mysql.com/doc/), [autoindex]()
 
 # Docker
  * [Dockerdocs](https://docs.docker.com/get-started/overview/)
@@ -44,7 +24,7 @@ An Operative System is a system software that manages computer hardware, softwar
  Docker uses a client-server architecture. The client talks to the ```docker daemon```, which does the heavy lifting of building, running and distributing your ```docker conatiner```.
  The client and the daemon can run on the same system, or you can connecr a docker client to a remote docker daemon.
  They communicate using ```REST API```, over UNIX sockets on a network interface.
- ![image](https://docs.docker.com/engine/images/architecture.svg)
+ ![image1](https://docs.docker.com/engine/images/architecture.svg)
 ### Docker Daemon
  The Docker Daemon ```(dockerd)``` listens for docker API requests and manages docker objects such as ```images```, ```containers```, ```networks```, and ```volumes```.
  A daemon can also communicate with other daemons to manage Docker services.
