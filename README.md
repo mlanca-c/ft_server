@@ -6,8 +6,9 @@
 	* [Keywords](https://github.com/mlanca-c/ft_server#Keywords)
 2. [Docker](https://github.com/mlanca-c/ft_server#Docker)
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
-3. [What is a OS?](https://github.com/mlanca-c/ft_server#What-is-a-OS?)
-	* [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
+3. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
+	* [What is a OS?](https://github.com/mlanca-c/ft_server#What-is-a-OS?)
+	* [Set up repositoriy](https://github.com/mlanca-c/ft_server#Set-up-repositoriy)
 # Intro
  > [subject](subject.pdf)
 
@@ -54,18 +55,18 @@ This is a System Administration subject. You will discover Docker and you will s
 
  ![image2](https://blog.netapp.com/wp-content/uploads/2016/03/Screen-Shot-2018-03-20-at-9.24.09-AM.png)
 
-# What is a OS?
-
-## Debian Buster
+# Debian Buster
  You can install Docker Engine in different ways, depending on your needs:
  * Most users set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach, except for Raspbian.
  * Some users download the DEB package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
  * In testing and development environments, some users choose to use automated convenience scripts to install Docker. This is currently the only approach for Raspbian.
 
-### Set up repositoriy:
- 1. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
- ```$ sudo apt-get update
+## What is a OS?
+ An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs. Nearly every computer program requires an operating system to function. The two most common operating systems are Microsoft Windows and Apple's macOS.
 
+## Set up repositoriy
+ 1. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
+ ```$ sudo apt-get Update
  $ sudo apt-get install \
     apt-transport-https \
     ca-certificates \
