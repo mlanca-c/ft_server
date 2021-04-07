@@ -16,8 +16,9 @@
 > [Operative System: Debian Buster](https://www.debian.org/doc/)
  system software that manages computer hardware, software resources, and provides common services for computer programs (ex: Linux, Windows, etc).
 
-> HTTP server: Nginx
- [what is a web server?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
+> [HTTP server: Nginx](https://nginx.org/en/docs/)
+
+> [what is a web server?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
 
 > [subject](subject.pdf)
 
