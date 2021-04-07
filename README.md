@@ -14,7 +14,7 @@
  * Apply autoindex.
 
 > [Operative System: Debian Buster](https://www.debian.org/doc/)
- system software that manages computer hardware, software resources, and provides common services for computer programs (ex: Linux, Windows, etc).
+system software that manages computer hardware, software resources, and provides common services for computer programs (ex: Linux, Windows, etc).
 
 > [HTTP server: Nginx](https://nginx.org/en/docs/)
 
