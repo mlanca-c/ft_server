@@ -57,7 +57,7 @@ This is a System Administration subject. You will discover Docker and you will s
  ![image2](https://s7280.pcdn.co/wp-content/uploads/2018/08/containers-vs-virtual-machines-1024x522.png)
 
 ## Dockerfile
-### docker build command
+### $ docker build
  The docker build command builds an image from a ```Dockerfile``` and a context. The build’s context is the set of files at a specified location ```PATH``` or ```URL```. The ```PATH``` is a directory on your local filesystem. The ```URL``` is a Git repository location.
  ```
  $ docker build .
@@ -66,6 +66,7 @@ This is a System Administration subject. You will discover Docker and you will s
  ...
  ```
  This example shows a build command that uses the current directory as context. The building is run by the Docker daemon, not by the CLI. The first thing a build process does is send the entire context (recursively) to the daemon. In most cases, it’s best to start with an empty directory as context and keep your Dockerfile in that directory. Add only the files needed for building the Dockerfile. 
+ Traditionally, the Dockerfile is called ```Dockerfile``` and located in the root of the context. You use the -f flag with docker build to point to a Dockerfile anywhere in your file system.
 
 # Debian Buster
  You can install Docker Engine in different ways, depending on your needs:
