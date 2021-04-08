@@ -81,6 +81,8 @@ This is a System Administration subject. You will discover Docker and you will s
 
  > Parent Image: An image’s parent image is the image designated in the ```FROM``` directive in the image’s Dockerfile. All subsequent commands are based on this parent image. A Dockerfile with the ```FROM scratch``` directive uses no parent image, and creates a base image.
 
+ > ARG: The ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command using the --build-arg <varname>=<value> flag. A Dockerfile may include one or more ARG instructions.
+
 # Debian Buster
  You can install Docker Engine in different ways, depending on your needs:
  * Most users set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach, except for Raspbian.
