@@ -23,7 +23,7 @@ This is a System Administration subject. You will discover Docker and you will s
  > [Docker](https://docs.docker.com/get-started/overview/), [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server), [Dockerfile](https://docs.docker.com/engine/reference/builder/), [Debian Buster](https://www.debian.org/doc/),[Nginx](https://nginx.org/en/docs/), [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html), [WordPress](https://codex.wordpress.org/Main_Page), [phpMyAdmin](https://www.phpmyadmin.net/docs/), [MySQL](https://dev.mysql.com/doc/), [autoindex]().
 
 # Docker
- ![dockerimage](https://www.docker.com/sites/default/files/social/docker_facebook_share.png) * [Dockerdocs](https://docs.docker.com/get-started/overview/)
+ ![dockerimage](https://www.docker.com/sites/default/files/social/docker_facebook_share.png) [Dockerdocs](https://docs.docker.com/get-started/overview/)
 ## What you can do in Docker
  * Containerize Applications.
  * Run each service with its own dependencies in separate containers.
