@@ -43,9 +43,9 @@ This is a System Administration subject. You will discover Docker and you will s
  So you have a common Linux ```kernel``` shared across al races, and some custom ```software``` that differentiates OS from each other.
 
  -----------------------
- Well, ```Docker containers share the underlying kernel```. So let's say we have a system with an ```Ubuntu``` OS with docker installed on it, docker can run any flavor of OS on top of it as long as they are all based on the same ```kernel```, in this case ```Linux```. So Docker can run on another distribution like ```Debian```, ```Fedora```, ```SUSE```. Each docker container only has the additional software that makes these OS different.
+ Well, <Docker containers share the underlying kernel>. So let's say we have a system with an ```Ubuntu``` OS with docker installed on it, docker can run any flavor of OS on top of it as long as they are all based on the same ```kernel```, in this case ```Linux```. So Docker can run on another distribution like ```Debian```, ```Fedora```, ```SUSE```. Each docker container only has the additional software that makes these OS different.
 
- > You wont be able to run a Windows based container on a Docker host with Linux. 
+ The main purpose of Docker is to package and containerize applications, and to ship them and run them as many times as you want.
 
 ### Containers vs. VM
  |Virtual Machines	|Containers		|
