@@ -2,8 +2,8 @@
   42Cursus-ft_server/42Lisboa
 
 # Contents
-<details>
-  <summary>Click to expand</summary>
+ <details>
+  <Contents>Click to expand</Contents>
 	
 1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
 	* [Keywords](https://github.com/mlanca-c/ft_server#Keywords)
