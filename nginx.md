@@ -2,6 +2,7 @@
 
  <details>
 
+
  > To fetch a webpage, your ```browser``` sends a request to the ```web server```, which searches for the requested file in its own storage space. Upon finding the file, the ```server``` reads it, processes it as-needed, and sends it to the ```browser```.
  
  As its name implies, ```HTTP``` (**H**yper**t**ext **T**ransfer **P**rotocol) pecifies how to transfer hypertext (linked web documents) between two computers.
