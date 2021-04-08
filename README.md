@@ -59,7 +59,7 @@ This is a System Administration subject. You will discover Docker and you will s
  ![image2](https://s7280.pcdn.co/wp-content/uploads/2018/08/containers-vs-virtual-machines-1024x522.png)
 
 ## Docker Architecture
- Docker uses a client-server architecture. The client talks to the ```docker daemon```, which does the heavy lifting of building, running and distributing your ```docker conatiner```.
+ Docker uses a client-server architecture. The client talks to the ```docker daemon```, which does the heavy lifting of building, running and distributing your ```docker container```.
  The client and the daemon can run on the same system, or you can connecr a docker client to a remote docker daemon.
  They communicate using ```REST API```, over UNIX sockets on a network interface.
  ![image1](https://docs.docker.com/engine/images/architecture.svg)
@@ -89,16 +89,37 @@ This is a System Administration subject. You will discover Docker and you will s
 
  ```
  # docker run command is used to run a contaier from an image. 
- $ docker run nginx
+ $ docker run <image>
 
- # docker ps command lists all running conatiners and some basic information about them, such as
+ # docker ps command lists all running containers and some basic information about them, such as
  # the container ID, the name of the image used to run the containers, the current status and the
- #names of the container.
+ # names of the container.
  $ docker ps
 
  CONTAINER ID	IMAGE	COMMAND						CREATED			STATUS			PORTS	NAMES
  79685ac413d	nginx	"nginx -g 'daemon of..."	7 seconds ago	Up 6 seconds	80/tcp	silly_sammet
- ```
+ 
+ # the -a option outputs all running as well as previously stopped or exited containers.
+ $ docker ps -a
+
+ # docker stop command is used to stop a running contaier. 
+ # You must provide either the container ID or the container name.
+ $ docker stop <container name>
+
+ # docker rm command used to remove a stopped or exited container permanently.
+ $ docker rm <container name/container ID>
+
+ # docker images command shows a list of images and their sizes.
+ $ docker images
+
+ # docker rmi command used to remove an image permanently.
+ # first stop and delete all containers running of that image to remove it.
+ $ docker rm <image>
+
+ # docker pull command pulls the image from docker hub.
+ $ docker pull <image>
+
+```
 
 ## Dockerfile
  Traditionally, the Dockerfile is called ```Dockerfile``` and located in the root of the context. You use the -f flag with docker build to point to a Dockerfile anywhere in your file system.
