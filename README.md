@@ -11,6 +11,7 @@
 3. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
 	* [What is a OS?](https://github.com/mlanca-c/ft_server#what-is-a-os)
 	* [Set up repositoriy](https://github.com/mlanca-c/ft_server#Set-up-repositoriy)
+
 # Intro
  > [subject](subject.pdf)
 
@@ -28,6 +29,7 @@ This is a System Administration subject. You will discover Docker and you will s
 ## What you can do in Docker
  * Containerize Applications.
  * Run each service with its own dependencies in separate containers.
+
 ## Containers
  Containers are completely isolated environments, as in they can have their own services, their own network interfaces, just like ```virtual machines```, with the exception that they all share the same OS ```kernel```. 
 
