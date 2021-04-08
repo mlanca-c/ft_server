@@ -5,6 +5,7 @@
 1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
 	* [Keywords](https://github.com/mlanca-c/ft_server#Keywords)
 2. [Docker](https://github.com/mlanca-c/ft_server#Docker)
+    * [Containers](https://github.com/mlanca-c/ft_server#Containers)
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
     * [Dockerfile](https://github.com/mlanca-c/ft_server#Dockerfile)
 3. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
@@ -27,6 +28,24 @@ This is a System Administration subject. You will discover Docker and you will s
 ## What you can do in Docker
  * Containerize Applications.
  * Run each service with its own dependencies in separate containers.
+## Containers
+ Containers are completely isolated environments, as in they can have their own services, their own network interfaces, just like virtual machines, with the exception that they all share the same OS kernel. 
+
+ Containers have existed for years. What Docker offers is tools with several powerful functionalities, that make it eaasier for developers to be able to work with containers.
+ > An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs. Nearly every computer program requires an operating system to function. The two most common operating systems are Microsoft Windows and Apple's macOS.
+
+ An OS consists of two things, an OS kernel and a set of software.
+
+ The OS kernel is responsible for interacting with the underlying hardware. While the OS kernel remains the same being, for example Linux, it's the software above it that makes these OS different. This software may consist of a different user interface, drivers, compilers, file managers, developer tools, etc.
+
+ So you have a common Linux kernel shared across al races, and some custom software that differentiates OS from each other.
+ 
+### Containers vs. VM
+ |Virtual Machines	|Containers		|
+ |:----------------:|:-------------:|
+ |Designed by running software on top of physical servers to emulate a particular hardware system. A hypervisor, or a virtual machine monitor, is software, firmware, or hardware that creates and runs VMs. It’s what sits between the hardware and the virtual machine and is necessary to virtualize the server.Within each virtual machine runs a unique guest operating system. VMs with different operating systems can run on the same physical server—a UNIX VM can sit alongside a Linux VM, and so on. Each VM has its own binaries, libraries, and applications that it services, and the VM may be many gigabytes in size. Virtual machines and containers differ in several ways, but the primary difference is that containers provide a way to virtualize an OS so that multiple workloads can run on a single OS instance. With VMs, the hardware is being virtualized to run multiple OS instances. Containers’ speed, agility, and portability make them yet another tool to help streamline software development.|Containers sit on top of a physical server and its host OS—for example, Linux or Windows. Each container shares the host OS kernel and, usually, the binaries and libraries, too. Shared components are read-only. Containers are thus exceptionally “light”—they are only megabytes in size and take just seconds to start, versus gigabytes and minutes for a VM.|
+
+ ![image2](https://s7280.pcdn.co/wp-content/uploads/2018/08/containers-vs-virtual-machines-1024x522.png)
 
 ## Docker Architecture
  Docker uses a client-server architecture. The client talks to the ```docker daemon```, which does the heavy lifting of building, running and distributing your ```docker conatiner```.
@@ -52,13 +71,6 @@ This is a System Administration subject. You will discover Docker and you will s
  |:------------:|:---------:|
  |Images		|An image is a read-only template with instructions for creating a Docker container. You might create your own images or you might only use those created by others and published in a registry. To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image.|
  |Containers	|A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state. A container is defined by its image as well as any configuration options you provide to it when you create or start it.|
-
-### Containers vs. VM
- |Virtual Machines	|Containers		|
- |:----------------:|:-------------:|
- |Designed by running software on top of physical servers to emulate a particular hardware system. A hypervisor, or a virtual machine monitor, is software, firmware, or hardware that creates and runs VMs. It’s what sits between the hardware and the virtual machine and is necessary to virtualize the server.Within each virtual machine runs a unique guest operating system. VMs with different operating systems can run on the same physical server—a UNIX VM can sit alongside a Linux VM, and so on. Each VM has its own binaries, libraries, and applications that it services, and the VM may be many gigabytes in size. Virtual machines and containers differ in several ways, but the primary difference is that containers provide a way to virtualize an OS so that multiple workloads can run on a single OS instance. With VMs, the hardware is being virtualized to run multiple OS instances. Containers’ speed, agility, and portability make them yet another tool to help streamline software development.|Containers sit on top of a physical server and its host OS—for example, Linux or Windows. Each container shares the host OS kernel and, usually, the binaries and libraries, too. Shared components are read-only. Containers are thus exceptionally “light”—they are only megabytes in size and take just seconds to start, versus gigabytes and minutes for a VM.|
-
- ![image2](https://s7280.pcdn.co/wp-content/uploads/2018/08/containers-vs-virtual-machines-1024x522.png)
 
 ## Dockerfile
  Traditionally, the Dockerfile is called ```Dockerfile``` and located in the root of the context. You use the -f flag with docker build to point to a Dockerfile anywhere in your file system.
@@ -93,8 +105,7 @@ This is a System Administration subject. You will discover Docker and you will s
  * Some users download the DEB package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
  * In testing and development environments, some users choose to use automated convenience scripts to install Docker. This is currently the only approach for Raspbian.
 
-## What is a OS?
- An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs. Nearly every computer program requires an operating system to function. The two most common operating systems are Microsoft Windows and Apple's macOS.
+
 
 ## Set up repositoriy
  1. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
