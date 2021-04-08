@@ -7,6 +7,7 @@
 2. [Docker](https://github.com/mlanca-c/ft_server#Docker)
     * [Containers](https://github.com/mlanca-c/ft_server#Containers)
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
+    * [Docker Commands](https://github.com/mlanca-c/ft_server#Docker-Commands)
     * [Dockerfile](https://github.com/mlanca-c/ft_server#Dockerfile)
 3. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
 	* [Set up repositoriy](https://github.com/mlanca-c/ft_server#Set-up-repositoriy)
@@ -83,6 +84,18 @@ This is a System Administration subject. You will discover Docker and you will s
  |Containers	|A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state. A container is defined by its image as well as any configuration options you provide to it when you create or start it.|
 
  > An ```image``` is a package or a template. It s used to create one or more ```containers```, **containers are running instances of images** that are isolates and have theis own environments ans set of processes.
+
+## Docker Commands
+
+ ```
+  # docker run command is used to run a contaier from an image. 
+ $ docker run nginx
+  # docker ps command lists all running conatiners and some basic information about them, such as the container ID, the name of the image used to run the containers, the current status and the names of the container.
+ $ docker ps
+
+ CONTAINER ID	IMAGE	COMMAND						CREATED			STATUS			PORTS	NAMES
+ 79685ac413d	nginx	"nginx -g 'daemon of..."	7 seconds ago	Up 6 seconds	80/tcp	silly_sammet
+ ```
 
 ## Dockerfile
  Traditionally, the Dockerfile is called ```Dockerfile``` and located in the root of the context. You use the -f flag with docker build to point to a Dockerfile anywhere in your file system.
