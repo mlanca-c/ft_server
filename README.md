@@ -32,6 +32,7 @@ This is a System Administration subject. You will discover Docker and you will s
  Containers are completely isolated environments, as in they can have their own services, their own network interfaces, just like virtual machines, with the exception that they all share the same OS kernel. 
 
  Containers have existed for years. What Docker offers is tools with several powerful functionalities, that make it eaasier for developers to be able to work with containers.
+
  -----------------------
  > An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs. Nearly every computer program requires an operating system to function. The two most common operating systems are Microsoft Windows and Apple's macOS.
 
@@ -40,6 +41,7 @@ This is a System Administration subject. You will discover Docker and you will s
  The OS kernel is responsible for interacting with the underlying hardware. While the OS kernel remains the same being, for example Linux, it's the software above it that makes these OS different. This software may consist of a different user interface, drivers, compilers, file managers, developer tools, etc.
 
  So you have a common Linux kernel shared across al races, and some custom software that differentiates OS from each other.
+
  -----------------------
  
 ### Containers vs. VM
