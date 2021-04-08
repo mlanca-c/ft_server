@@ -9,7 +9,6 @@
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
     * [Dockerfile](https://github.com/mlanca-c/ft_server#Dockerfile)
 3. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
-	* [What is a OS?](https://github.com/mlanca-c/ft_server#what-is-a-os)
 	* [Set up repositoriy](https://github.com/mlanca-c/ft_server#Set-up-repositoriy)
 
 # Intro
@@ -21,12 +20,14 @@ This is a System Administration subject. You will discover Docker and you will s
  * Run several services at the same time: ```WordPress``` website, ```phpMyAdmin```, and ```MySQL```.
  * Apply ```SSL``` protocol.
  * Apply ```autoindex```.
+
 ## Keywords
  > [Docker](https://docs.docker.com/get-started/overview/), [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server), [Dockerfile](https://docs.docker.com/engine/reference/builder/), [Debian Buster](https://www.debian.org/doc/),[Nginx](https://nginx.org/en/docs/), [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html), [WordPress](https://codex.wordpress.org/Main_Page), [phpMyAdmin](https://www.phpmyadmin.net/docs/), [MySQL](https://dev.mysql.com/doc/), [autoindex]().
 
 # Docker
  ![dockerimage](https://www.docker.com/sites/default/files/social/docker_facebook_share.png) [Dockerdocs](https://docs.docker.com/get-started/overview/)
-## What you can do in Docker
+
+ What you can do in Docker:
  * Containerize Applications.
  * Run each service with its own dependencies in separate containers.
 
