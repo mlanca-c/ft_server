@@ -1,7 +1,6 @@
 # Nginx
 
  <details>
-  <Nginx></Nginx>
 
  Nginx is an open source ```web server```.
 
