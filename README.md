@@ -90,7 +90,8 @@ This is a System Administration subject. You will discover Docker and you will s
  ```
   # docker run command is used to run a contaier from an image. 
  $ docker run nginx
-  # docker ps command lists all running conatiners and some basic information about them, such as the container ID, the name of the image used to run the containers, the current status and the names of the container.
+  # docker ps command lists all running conatiners and some basic information about them, such as \ 
+  the container ID, the name of the image used to run the containers, the current status and the names of the container.
  $ docker ps
 
  CONTAINER ID	IMAGE	COMMAND						CREATED			STATUS			PORTS	NAMES
