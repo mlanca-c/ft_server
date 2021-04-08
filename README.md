@@ -2,6 +2,9 @@
   42Cursus-ft_server/42Lisboa
 
 # Contents
+<details>
+  <summary>Click to expand</summary>
+	
 1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
 	* [Keywords](https://github.com/mlanca-c/ft_server#Keywords)
 2. [Docker](https://github.com/mlanca-c/ft_server#Docker)
@@ -91,6 +94,8 @@ This is a System Administration subject. You will discover Docker and you will s
  ```
  # docker run command is used to run a contaier from an image. 
  $ docker run <image>
+ # Using default tag: latest 
+ # as in <image:version> if you want another version to run.
 
  # docker ps command lists all running containers and some basic information about them, such as
  # the container ID, the name of the image used to run the containers, the current status and the
@@ -123,6 +128,8 @@ This is a System Administration subject. You will discover Docker and you will s
  # docker exec <container name> <command>
  $ docker exec <container name> <command>
 ```
+ Port Mapping:
+ 
 
 ## Dockerfile
  Traditionally, the Dockerfile is called ```Dockerfile``` and located in the root of the context. You use the -f flag with docker build to point to a Dockerfile anywhere in your file system.
