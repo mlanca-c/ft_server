@@ -51,6 +51,8 @@ This is a System Administration subject. You will discover Docker and you will s
 
  The main purpose of Docker is to package and containerize applications, and to ship them and run them as many times as you want.
 
+ > A container only lives so long as the process inside it's alive.
+
 ### Containers vs. VM
  |Virtual Machines	|Containers		|
  |:----------------:|:-------------:|
@@ -86,7 +88,6 @@ This is a System Administration subject. You will discover Docker and you will s
  > An ```image``` is a package or a template. It s used to create one or more ```containers```, **containers are running instances of images** that are isolates and have theis own environments ans set of processes.
 
 ## Docker Commands
-
  ```
  # docker run command is used to run a contaier from an image. 
  $ docker run <image>
@@ -119,6 +120,8 @@ This is a System Administration subject. You will discover Docker and you will s
  # docker pull command pulls the image from docker hub.
  $ docker pull <image>
 
+ # docker exec <container name> <command>
+ $ docker exec <container name> <command>
 ```
 
 ## Dockerfile
