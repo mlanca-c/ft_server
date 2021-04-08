@@ -23,7 +23,13 @@ This is a System Administration subject. You will discover Docker and you will s
  > [Docker](https://docs.docker.com/get-started/overview/), [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server), [Dockerfile](https://docs.docker.com/engine/reference/builder/), [Debian Buster](https://www.debian.org/doc/),[Nginx](https://nginx.org/en/docs/), [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html), [WordPress](https://codex.wordpress.org/Main_Page), [phpMyAdmin](https://www.phpmyadmin.net/docs/), [MySQL](https://dev.mysql.com/doc/), [autoindex]().
 
 # Docker
+ ![dockerimage](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.docker.com%2F&psig=AOvVaw2j-9q4HT6Te5lUfC7LdAm9&ust=1617964713695000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJChgLm67u8CFQAAAAAdAAAAABAs)
+
  * [Dockerdocs](https://docs.docker.com/get-started/overview/)
+## What you can do in Docker
+ * Containerize Applications.
+ * Run each service with its own dependencies in separate containers.
+
 ## Docker Architecture
  Docker uses a client-server architecture. The client talks to the ```docker daemon```, which does the heavy lifting of building, running and distributing your ```docker conatiner```.
  The client and the daemon can run on the same system, or you can connecr a docker client to a remote docker daemon.
@@ -81,7 +87,7 @@ This is a System Administration subject. You will discover Docker and you will s
 
  > Parent Image: An image’s parent image is the image designated in the ```FROM``` directive in the image’s Dockerfile. All subsequent commands are based on this parent image. A Dockerfile with the ```FROM scratch``` directive uses no parent image, and creates a base image.
 
- > ARG: The ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command using the --build-arg <varname>=<value> flag. A Dockerfile may include one or more ARG instructions.
+ > ARG: The ARG instruction defines a variable that users can pass at build-time to the builder with the ```docker build``` command using the ```--build-arg <varname>=<value>``` flag. A Dockerfile may include one or more ARG instructions.
 
 # Debian Buster
  You can install Docker Engine in different ways, depending on your needs:
