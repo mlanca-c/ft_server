@@ -97,7 +97,7 @@ This is a System Administration subject. You will discover Docker and you will s
  # names of the container.
  $ docker ps
 
- CONTAINER ID	IMAGE	COMMAND						CREATED			STATUS			PORTS	NAMES
+ CONTAINER ID	IMAGE	COMMAND				CREATED		STATUS		PORTS	NAMES
  79685ac413d	nginx	"nginx -g 'daemon of..."	7 seconds ago	Up 6 seconds	80/tcp	silly_sammet
  
  # the -a option outputs all running as well as previously stopped or exited containers.
@@ -159,14 +159,7 @@ This is a System Administration subject. You will discover Docker and you will s
 
 
 
-## Set up repositoriy
- 1. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
- ```
- $ sudo apt-get Update
- $ sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
- ```
+## How I installed Docker on Ubuntu
+ [Install using the convenience script](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
+ 
+ 
