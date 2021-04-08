@@ -6,6 +6,7 @@
 	* [Keywords](https://github.com/mlanca-c/ft_server#Keywords)
 2. [Docker](https://github.com/mlanca-c/ft_server#Docker)
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
+    * [Dockerfile](https://github.com/mlanca-c/ft_server#Dockerfile)
 3. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
 	* [What is a OS?](https://github.com/mlanca-c/ft_server#what-is-a-os)
 	* [Set up repositoriy](https://github.com/mlanca-c/ft_server#Set-up-repositoriy)
@@ -49,11 +50,22 @@ This is a System Administration subject. You will discover Docker and you will s
  |Containers	|A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state. A container is defined by its image as well as any configuration options you provide to it when you create or start it.|
 
 ### Containers vs. VM
- |Virtual Machines|Containers	   |
- |:--------------:|:--------------:|
+ |Virtual Machines	|Containers		|
+ |:----------------:|:-------------:|
  |Designed by running software on top of physical servers to emulate a particular hardware system. A hypervisor, or a virtual machine monitor, is software, firmware, or hardware that creates and runs VMs. It’s what sits between the hardware and the virtual machine and is necessary to virtualize the server.Within each virtual machine runs a unique guest operating system. VMs with different operating systems can run on the same physical server—a UNIX VM can sit alongside a Linux VM, and so on. Each VM has its own binaries, libraries, and applications that it services, and the VM may be many gigabytes in size. Virtual machines and containers differ in several ways, but the primary difference is that containers provide a way to virtualize an OS so that multiple workloads can run on a single OS instance. With VMs, the hardware is being virtualized to run multiple OS instances. Containers’ speed, agility, and portability make them yet another tool to help streamline software development.|Containers sit on top of a physical server and its host OS—for example, Linux or Windows. Each container shares the host OS kernel and, usually, the binaries and libraries, too. Shared components are read-only. Containers are thus exceptionally “light”—they are only megabytes in size and take just seconds to start, versus gigabytes and minutes for a VM.|
 
  ![image2](https://s7280.pcdn.co/wp-content/uploads/2018/08/containers-vs-virtual-machines-1024x522.png)
+
+## Dockerfile
+### docker build command
+ The docker build command builds an image from a ```Dockerfile``` and a context. The build’s context is the set of files at a specified location ```PATH``` or ```URL```. The ```PATH``` is a directory on your local filesystem. The ```URL``` is a Git repository location.
+ ```
+ $ docker build .
+ 
+ Sending build context to Docker daemon 6.51 MB
+ ...
+ ```
+ This example shows a build command that uses the current directory as context. The building is run by the Docker daemon, not by the CLI. The first thing a build process does is send the entire context (recursively) to the daemon. In most cases, it’s best to start with an empty directory as context and keep your Dockerfile in that directory. Add only the files needed for building the Dockerfile. 
 
 # Debian Buster
  You can install Docker Engine in different ways, depending on your needs:
