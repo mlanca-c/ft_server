@@ -3,6 +3,7 @@
 
 # Contents
  <details>
+
  1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
 	* [Keywords](https://github.com/mlanca-c/ft_server#Keywords)
  2. [Web Server](https://github.com/mlanca-c/ft_server#Web-Server)
@@ -44,8 +45,7 @@ This is a System Administration subject. You will discover Docker and you will s
 
 On a web server, the HTTP server is responsible for processing and answering incoming requests.
 
- <details>
-
+</details>
 
 # Docker
  ![dockerimage](https://www.docker.com/sites/default/files/social/docker_facebook_share.png) [Dockerdocs](https://docs.docker.com/get-started/overview/)
