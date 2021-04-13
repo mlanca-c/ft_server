@@ -37,7 +37,7 @@ This is a System Administration subject. You will discover Docker and you will s
 
  To fetch a webpage, your browser sends a request to the web server, which searches for the requested file in its own storage space. Upon finding the file, the server reads it, processes it as-needed, and sends it to the browser.
 
- ![web_server](https://cdn2.iconfinder.com/data/icons/e-commerce-objects-1/32/25_server_web_hosting_workstation_network_networking_servers-512.png)
+ ![web_server](http://www.clipartbest.com/cliparts/9c4/LnM/9c4LnMzgi.png)
 
  As its name implies, HTTP specifies how to transfer hypertext (linked web documents) between two computers.
  * Only clients can make HTTP requests, and then only to servers. Servers can only respond to a client's HTTP request.
