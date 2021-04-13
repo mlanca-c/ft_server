@@ -34,6 +34,7 @@ This is a System Administration subject. You will discover Docker and you will s
 
 
 # Web Server
+ <details>
 
  To fetch a webpage, your browser sends a request to the web server, which searches for the requested file in its own storage space. Upon finding the file, the server reads it, processes it as-needed, and sends it to the browser.
  ![web_server](http://www.clipartbest.com/cliparts/9c4/LnM/9c4LnMzgi.png)
@@ -44,6 +45,8 @@ This is a System Administration subject. You will discover Docker and you will s
  * The web server must answer every HTTP request, at least with an error message.
 
 On a web server, the HTTP server is responsible for processing and answering incoming requests.
+
+ <details>
 
 # Debian Buster
  You can install Docker Engine in different ways, depending on your needs:
