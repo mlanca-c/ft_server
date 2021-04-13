@@ -32,13 +32,23 @@ This is a System Administration subject. You will discover Docker and you will s
 
  In the contents below I try to explain what are these keywords, and how they fit in this project. If you had no difficulties understanding these keywords with their links, then I suggest you to waste your time somewhere else, and not to read below this.
 
+
+# Web Server
+
+ To fetch a webpage, your browser sends a request to the web server, which searches for the requested file in its own storage space. Upon finding the file, the server reads it, processes it as-needed, and sends it to the browser.
+ 
+ As its name implies, HTTP specifies how to transfer hypertext (linked web documents) between two computers.
+ * Only clients can make HTTP requests, and then only to servers. Servers can only respond to a client's HTTP request.
+ * When requesting a file via HTTP, clients must provide the file's URL.
+ * The web server must answer every HTTP request, at least with an error message.
+
+On a web server, the HTTP server is responsible for processing and answering incoming requests.
+
 # Debian Buster
  You can install Docker Engine in different ways, depending on your needs:
  * Most users set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach, except for Raspbian.
  * Some users download the DEB package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
  * In testing and development environments, some users choose to use automated convenience scripts to install Docker. This is currently the only approach for Raspbian.
-
-
 
 ## How I installed Docker on Ubuntu
  [Install using the convenience script](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
