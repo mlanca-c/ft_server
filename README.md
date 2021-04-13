@@ -3,17 +3,15 @@
 
 # Contents
  <details>
-  <Contents>Click to expand</Contents>
-	
-1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
+ 1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
 	* [Keywords](https://github.com/mlanca-c/ft_server#Keywords)
-2. [Web Server](https://github.com/mlanca-c/ft_server#Web-Server)
-2. [Docker](https://github.com/mlanca-c/ft_server#Docker)
+ 2. [Web Server](https://github.com/mlanca-c/ft_server#Web-Server)
+ 3. [Docker](https://github.com/mlanca-c/ft_server#Docker)
     * [Containers](https://github.com/mlanca-c/ft_server#Containers)
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
     * [Docker Commands](https://github.com/mlanca-c/ft_server#Docker-Commands)
     * [Dockerfile](https://github.com/mlanca-c/ft_server#Dockerfile)
-3. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
+ 4. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
 	* [Set up repositoriy](https://github.com/mlanca-c/ft_server#Set-up-repositoriy)
 </details>
  
