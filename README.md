@@ -13,21 +13,22 @@
     * [Docker Commands](https://github.com/mlanca-c/ft_server#Docker-Commands)
     * [Dockerfile](https://github.com/mlanca-c/ft_server#Dockerfile)
  4. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
-	* [Set up repositoriy](https://github.com/mlanca-c/ft_server#Set-up-repositoriy)
-</details>
+
+ </details>
  
 # Intro
  > [subject](subject.pdf)
 
-This is a System Administration subject. You will discover Docker and you will set up your first web server.
+ This is a System Administration subject. You will discover Docker and you will set up your first web server.
+
  Objectives:
- * Using ```Docker```, set up a ```web server``` with ```Nginx``` on ```Deiban Buster```.
+ * Using ```Docker```, set up a ```web server``` with ```Nginx``` on ```Debian Buster```.
  * Run several services at the same time: ```WordPress``` website, ```phpMyAdmin```, and ```MySQL```.
  * Apply ```SSL``` protocol.
  * Apply ```autoindex```.
 
 ## Keywords
- > [Docker](https://docs.docker.com/get-started/overview/), [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server), [Dockerfile](https://docs.docker.com/engine/reference/builder/), [Debian Buster](https://www.debian.org/doc/),[Nginx](https://nginx.org/en/docs/), [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html), [WordPress](https://codex.wordpress.org/Main_Page), [phpMyAdmin](https://www.phpmyadmin.net/docs/), [MySQL](https://dev.mysql.com/doc/), [autoindex]().
+ > [Docker](https://docs.docker.com/get-started/overview/), [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server), [Dockerfile](https://docs.docker.com/engine/reference/builder/), [Debian Buster](https://www.debian.org/doc/), [Nginx](https://nginx.org/en/docs/), [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html), [WordPress](https://codex.wordpress.org/Main_Page), [phpMyAdmin](https://www.phpmyadmin.net/docs/), [MySQL](https://dev.mysql.com/doc/), [autoindex]().
 
  In the contents below I try to explain what are these keywords, and how they fit in this project. If you had no difficulties understanding these keywords with their links, then I suggest you to waste your time somewhere else, and not to read below this.
 
@@ -38,14 +39,14 @@ This is a System Administration subject. You will discover Docker and you will s
  To fetch a webpage, your browser sends a request to the web server, which searches for the requested file in its own storage space. Upon finding the file, the server reads it, processes it as-needed, and sends it to the browser.
  ![web_server](http://www.clipartbest.com/cliparts/9c4/LnM/9c4LnMzgi.png)
  
- As its name implies, HTTP specifies how to transfer hypertext (linked web documents) between two computers.
+ As its name implies, HTTP (Hypertext Transfer Protocol) specifies how to transfer hypertext (linked web documents) between two computers.
  * Only clients can make HTTP requests, and then only to servers. Servers can only respond to a client's HTTP request.
  * When requesting a file via HTTP, clients must provide the file's URL.
  * The web server must answer every HTTP request, at least with an error message.
 
 On a web server, the HTTP server is responsible for processing and answering incoming requests.
 
-</details>
+ </details>
 
 # Docker
  ![dockerimage](https://www.docker.com/sites/default/files/social/docker_facebook_share.png) [Dockerdocs](https://docs.docker.com/get-started/overview/)
@@ -152,6 +153,7 @@ On a web server, the HTTP server is responsible for processing and answering inc
 
 ## Dockerfile
  Traditionally, the Dockerfile is called ```Dockerfile``` and located in the root of the context. You use the -f flag with docker build to point to a Dockerfile anywhere in your file system.
+
 ### $ docker build
  The docker build command builds an image from a ```Dockerfile``` and a context. The build’s context is the set of files at a specified location ```PATH``` or ```URL```. The ```PATH``` is a directory on your local filesystem. The ```URL``` is a Git repository location.
  ```
@@ -185,5 +187,12 @@ On a web server, the HTTP server is responsible for processing and answering inc
 
 ## How I installed Docker on Ubuntu
  [Install using the convenience script](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
- 
- 
+
+# Nginx
+
+ Nginx is an open source ```web server```.
+
+ Nginx can also function as a ```proxy``` server for email (IMAP, POP3, and SMTP) and a ```reverse proxy``` and load balancer for HTTP, TCP, and UDP servers.
+
+ > [Proxy](https://airtame.com/blog/what-is-proxy/): gateway between you and the internet. It separates users from websites, secures data and betters network performance.
+
