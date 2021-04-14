@@ -5,20 +5,21 @@
  <details>
 
  1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
- 2. [Web Server](https://github.com/mlanca-c/ft_server#Web-Server)
+ 2. [Definitions](https://github.com/mlanca-c/ft_server#Definitions)
+		* [Web Server](https://github.com/mlanca-c/ft_server#Web-Server)
+ 		* [Nginx](https://github.com/mlanca-c/ft_server#Nginx)
+ 		* [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
+ 		* [WordPress](https://github.com/mlanca-c/ft_server#WordPress)
+ 		* [PhpMyAdmin](https://github.com/mlanca-c/ft_server#PhpMyAdmin)
+ 		* [MySQL](https://github.com/mlanca-c/ft_server#MySQL)
+ 		* [SSL Protocol](https://github.com/mlanca-c/ft_server#SLL-Protocol)
+ 		* [Autoindex](https://github.com/mlanca-c/ft_server#Autoindex)
  3. [Docker](https://github.com/mlanca-c/ft_server#Docker)
     * [Containers](https://github.com/mlanca-c/ft_server#Containers)
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
     * [Docker Commands](https://github.com/mlanca-c/ft_server#Docker-Commands)
     * [Dockerfile](https://github.com/mlanca-c/ft_server#Dockerfile)
- 4. [Nginx](https://github.com/mlanca-c/ft_server#Nginx)
- 5. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
- 6. [WordPress](https://github.com/mlanca-c/ft_server#WordPress)
- 7. [PhpMyAdmin](https://github.com/mlanca-c/ft_server#PhpMyAdmin)
- 8. [MySQL](https://github.com/mlanca-c/ft_server#MySQL)
- 9. [SSL Protocol](https://github.com/mlanca-c/ft_server#SLL-Protocol)
- 10. [Autoindex](https://github.com/mlanca-c/ft_server#Autoindex)
-
+ 
  </details>
  
 # Intro
@@ -46,7 +47,8 @@
 
  In the contents below I try to explain what are these keywords, and how they fit in this project. If you had no difficulties understanding these keywords with their links, then I suggest you to waste your time somewhere else, and not to read below this.
 
-# Web Server
+# Definitions
+## Web Server
  <details>
 
  >  ```Web Server``` is computer software and underlying hardware that accepts requests via ```HTTP``` (Hypertext Transfer Protocol), the network protocol created to distribute web pages, or its secure variant ```HTTPS``` (Hypertext Transfer Protocol Secure).
@@ -65,6 +67,144 @@
  For this project, our Web server will be Nginx, which is a HTTP server.
 
  </details>
+
+## Nginx
+
+ <details>
+
+ ![](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mimastech.com%2Fwp-content%2Fuploads%2F2016%2F12%2Fnginx_webserver_logo.png&f=1&nofb=1)
+
+ Nginx is an open source ```web server```, that can also function as a ```proxy``` server for email (IMAP, POP3, and SMTP) and a ```reverse proxy``` and load balancer for HTTP, TCP, and UDP servers.
+
+ -----------------------
+
+ > [Proxy](https://airtame.com/blog/what-is-proxy/): gateway between you and the internet. It separates users from websites, secures data and betters network performance.
+
+ -----------------------
+
+ You can create an Nginx instance in a Docker container using the NGINX Open Source image from the Docker Hub.
+
+ docker pull will pull nginx image from docker hub.
+ ```Vim
+ $ docker pull nginx
+ ```
+
+ Checking to see if pull was succesfull
+ ```Vim
+ $ docker images
+
+ REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+ nginx        latest    62d49f9bab67   16 hours ago   133MB
+ ```
+
+ Run a command in a new container. The docker run command first creates a writeable container layer over the specified image - in this case Nginx - and then starts it using the specified command.
+ ```Vim
+ $ docker run nginx
+ ```
+
+ Then if I open a new tab, while docker run command is still running I can see that the container is still running as well.
+ ```Vim
+ $ docker ps
+
+ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+ 21d35338e000   nginx     "/docker-entrypoint.…"   17 seconds ago   Up 16 seconds   80/tcp    agitated_edison
+ ```
+
+ After stopping the run command on the first tab (ctrl + c) the container is inactive. To check if there are any containers open, use docker ps.
+ ```Vim
+ $ docker ps
+
+
+ ```
+ 
+ To see closed containers, use docker ps -a
+ ```Vim
+ docker ps -a
+
+ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                     PORTS     NAMES
+ 21d35338e000   nginx     "/docker-entrypoint.…"   10 minutes ago   Exited (0) 9 minutes ago             agitated_edison
+
+ ```
+
+ ```Vim
+ docker run -p 1234:80 nginx
+ ```
+
+ [localhost:1234](http://localhost:1234)
+
+
+ </details>
+
+## Debian Buster
+
+ <details>
+
+ > **Debian:** is a OS with a ```Linux Kernel```.
+
+ ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cnx-software.com%2Fwp-content%2Fuploads%2F2019%2F07%2FDebian-10-Buster.png&f=1&nofb=1)
+
+ In our server, Debian Buster will act as a ```Parent Image```.
+
+ > **Parent Image:** is the ``image`` that your ``image`` is based on. It refers to the contents of the ``FROM`` directive in the ``Dockerfile``. Each subsequent declaration in the Dockerfile modifies this ``parent image``. Most **Dockerfiles start from a parent image**, rather than a base image. However, the terms are sometimes used interchangeably.
+
+### Set up Dockerfile
+ 
+ **Synopsis:** FROM image:tag
+ ```
+ FROM debian:buster
+ ```
+ The ```FROM``` instruction sets the ```base image``` for subsequent instructions. A valid ```Dockerfile``` must have FROM as its first instruction.
+
+ </details>
+
+## WordPress
+
+ <details>
+ 
+ ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.w.org%2Fabout%2Fimages%2Flogos%2Fwordpress-logo-stacked-rgb.png&f=1&nofb=1)
+
+ > **WordPress:** is a free and open-source content management system written in ```PHP``` and paired with a ```MySQL``` or MariaDB database.
+
+ </details>
+
+## PhpMyAdmin
+
+ <details>
+
+ ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fde%2Fthumb%2Fe%2Fef%2FPhpMyAdmin-Logo.svg%2F1920px-PhpMyAdmin-Logo.svg.png&f=1&nofb=1)
+
+ ```PhpMyAdmin``` is a free software tool written in ```PHP``` that is intended to handle the administration of a ```MySQL``` or MariaDB database server. You can use phpMyAdmin to perform most administration tasks, including creating a database, running queries, and adding user accounts.
+
+ > [PHP](https://www.php.net/manual/en/index.php): PHP (Hypertext Preprocessor) is a widely-used open source general-purpose **scripting language** that is especially suited for web development and can be embedded into HTML. 
+
+ </details>
+
+## MySQL
+
+ <details>
+
+ ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmspcontrol.org%2Fwp-content%2Fuploads%2F2015%2F11%2Fmysql.png&f=1&nofb=1)
+
+ > **MySQL:** is an open source relational database management system (RDBMS) with a client-server model. RDBMS is a software or service used to create and manage databases based on a relational model.
+
+ </details>
+
+## SSL Protocol
+
+ <details>
+ 
+ > **SSL (Secure Sockets Layer):** are protocols for establishing authenticated and encrypted links between networked computers. 
+
+ </details>
+
+## Autoindex
+
+ <details>
+ 
+
+ 
+ </details>
+
 
 # Docker
  ![](https://www.docker.com/sites/default/files/social/docker_facebook_share.png) 
@@ -252,137 +392,3 @@
 
  -----------------------
 
-# Nginx
-
- <details>
-
- ![](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mimastech.com%2Fwp-content%2Fuploads%2F2016%2F12%2Fnginx_webserver_logo.png&f=1&nofb=1)
-
- Nginx is an open source ```web server```, that can also function as a ```proxy``` server for email (IMAP, POP3, and SMTP) and a ```reverse proxy``` and load balancer for HTTP, TCP, and UDP servers.
-
- -----------------------
-
- > [Proxy](https://airtame.com/blog/what-is-proxy/): gateway between you and the internet. It separates users from websites, secures data and betters network performance.
-
- -----------------------
-
- You can create an Nginx instance in a Docker container using the NGINX Open Source image from the Docker Hub.
-
- docker pull will pull nginx image from docker hub.
- ```Vim
- $ docker pull nginx
- ```
-
- Checking to see if pull was succesfull
- ```Vim
- $ docker images
-
- REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
- nginx        latest    62d49f9bab67   16 hours ago   133MB
- ```
-
- Run a command in a new container. The docker run command first creates a writeable container layer over the specified image - in this case Nginx - and then starts it using the specified command.
- ```Vim
- $ docker run nginx
- ```
-
- Then if I open a new tab, while docker run command is still running I can see that the container is still running as well.
- ```Vim
- $ docker ps
-
- CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
- 21d35338e000   nginx     "/docker-entrypoint.…"   17 seconds ago   Up 16 seconds   80/tcp    agitated_edison
- ```
-
- After stopping the run command on the first tab (ctrl + c) the container is inactive. To check if there are any containers open, use docker ps.
- ```Vim
- $ docker ps
-
-
- ```
- 
- To see closed containers, use docker ps -a
- ```Vim
- docker ps -a
-
- CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                     PORTS     NAMES
- 21d35338e000   nginx     "/docker-entrypoint.…"   10 minutes ago   Exited (0) 9 minutes ago             agitated_edison
-
- ```
-
- ```Vim
- docker run -p 1234:80 nginx
- ```
-
- [localhost:1234](http://localhost:1234)
-
-
- </details>
-
-# Debian Buster
-
- <details>
-
- > **Debian:** is a OS with a ```Linux Kernel```.
-
- ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cnx-software.com%2Fwp-content%2Fuploads%2F2019%2F07%2FDebian-10-Buster.png&f=1&nofb=1)
-
- In our server, Debian Buster will act as a ```Parent Image```.
-
- > **Parent Image:** is the ``image`` that your ``image`` is based on. It refers to the contents of the ``FROM`` directive in the ``Dockerfile``. Each subsequent declaration in the Dockerfile modifies this ``parent image``. Most **Dockerfiles start from a parent image**, rather than a base image. However, the terms are sometimes used interchangeably.
-
-## Set up Dockerfile
- 
- **Synopsis:** FROM image:tag
- ```
- FROM debian:buster
- ```
- The ```FROM``` instruction sets the ```base image``` for subsequent instructions. A valid ```Dockerfile``` must have FROM as its first instruction.
-
- </details>
-
-# WordPress
-
- <details>
- 
- ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.w.org%2Fabout%2Fimages%2Flogos%2Fwordpress-logo-stacked-rgb.png&f=1&nofb=1)
-
- > **WordPress:** is a free and open-source content management system written in ```PHP``` and paired with a ```MySQL``` or MariaDB database.
-
- </details>>
-
-# PhpMyAdmin
-
- <details>
-
- ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fde%2Fthumb%2Fe%2Fef%2FPhpMyAdmin-Logo.svg%2F1920px-PhpMyAdmin-Logo.svg.png&f=1&nofb=1)
-
- ```PhpMyAdmin``` is a free software tool written in ```PHP``` that is intended to handle the administration of a ```MySQL``` or MariaDB database server. You can use phpMyAdmin to perform most administration tasks, including creating a database, running queries, and adding user accounts.
-
- > [PHP](https://www.php.net/manual/en/index.php): PHP (Hypertext Preprocessor) is a widely-used open source general-purpose **scripting language** that is especially suited for web development and can be embedded into HTML. 
-
- </details>
-
-# MySQL
-
- <details>
-
- ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmspcontrol.org%2Fwp-content%2Fuploads%2F2015%2F11%2Fmysql.png&f=1&nofb=1)
-
- > **MySQL:** is an open source relational database management system (RDBMS) with a client-server model. RDBMS is a software or service used to create and manage databases based on a relational model.
-
- </details>
-
-# SSL Protocol
-
- <details>
- 
- > **SSL (Secure Sockets Layer):** are protocols for establishing authenticated and encrypted links between networked computers. 
-
- </details>
-
-# Autoindex
-
- <details>
- 
- </details>
