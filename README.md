@@ -28,8 +28,11 @@
  * Apply ```autoindex```.
 
  **Operative System:** Debian Buster 
+
  **Web Server:** Nginx
+
  **Running Apps:** WordPress, phpMyAdmin, MySQL
+
  **Protocol:** SSL
 
 ## Keywords
