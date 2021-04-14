@@ -53,7 +53,7 @@
 
  To fetch a webpage, your browser sends a request to the web server, which searches for the requested file in its own ```storage space```. Upon finding the file, the server reads it, processes it as-needed, and sends it to the browser.
 
- ![web_server](http://www.clipartbest.com/cliparts/9c4/LnM/9c4LnMzgi.png)
+ ![](http://www.clipartbest.com/cliparts/9c4/LnM/9c4LnMzgi.png)
  
  As its name implies, ```HTTP``` specifies how to transfer hypertext (linked web documents) between two computers.
  * Only clients can make HTTP requests, and then only to servers. Servers can only respond to a client's HTTP request.
@@ -67,7 +67,7 @@
  </details>
 
 # Docker
- ![dockerimage](https://www.docker.com/sites/default/files/social/docker_facebook_share.png) 
+ ![](https://www.docker.com/sites/default/files/social/docker_facebook_share.png) 
  > [Dockerdocs](https://docs.docker.com/get-started/overview/)
 
  * Containerizes ```Applications```.
@@ -102,7 +102,7 @@
  |:----------------:|:-------------:|
  |Designed by running software on top of physical servers to emulate a particular hardware system. A hypervisor, or a virtual machine monitor, is software, firmware, or hardware that creates and runs VMs. It’s what sits between the hardware and the virtual machine and is necessary to virtualize the server. Within each virtual machine runs a unique guest operating system. VMs with different operating systems can run on the same physical server — a UNIX VM can sit alongside a Linux VM, and so on. Each VM has its own binaries, libraries, and applications that it services, and the VM may be many gigabytes in size. Virtual machines and containers differ in several ways, but the primary difference is that containers provide a way to virtualize an OS so that multiple workloads can run on a single OS instance. With VMs, the hardware is being virtualized to run multiple OS instances. Containers’ speed, agility, and portability make them yet another tool to help streamline software development.|Containers sit on top of a physical server and its host OS — for example, Linux or Windows. Each container shares the host OS kernel and, usually, the binaries and libraries, too. Shared components are read-only. Containers are thus exceptionally “light”—they are only megabytes in size and take just seconds to start, versus gigabytes and minutes for a VM.|
 
- ![image2](https://s7280.pcdn.co/wp-content/uploads/2018/08/containers-vs-virtual-machines-1024x522.png)
+ ![](https://s7280.pcdn.co/wp-content/uploads/2018/08/containers-vs-virtual-machines-1024x522.png)
 
  </details>
 
@@ -110,7 +110,7 @@
  Docker uses a client-server architecture. The client talks to the ```docker daemon```, which does the heavy lifting of building, running and distributing your ```docker container```.
  The client and the daemon can run on the same system, or you can connect a docker client to a remote docker daemon.
  They communicate using ```REST API```, over UNIX sockets on a network interface.
- ![image1](https://docs.docker.com/engine/images/architecture.svg)
+ ![](https://docs.docker.com/engine/images/architecture.svg)
 ### Docker Daemon
 
  <details>
@@ -255,7 +255,7 @@
 
  <details>
 
- ![nginx_image](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mimastech.com%2Fwp-content%2Fuploads%2F2016%2F12%2Fnginx_webserver_logo.png&f=1&nofb=1)
+ ![](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mimastech.com%2Fwp-content%2Fuploads%2F2016%2F12%2Fnginx_webserver_logo.png&f=1&nofb=1)
 
  Nginx is an open source ```web server```, that can also function as a ```proxy``` server for email (IMAP, POP3, and SMTP) and a ```reverse proxy``` and load balancer for HTTP, TCP, and UDP servers.
 
@@ -340,7 +340,7 @@
 
  <details>
 
- ![phpmyadmin](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fde%2Fthumb%2Fe%2Fef%2FPhpMyAdmin-Logo.svg%2F1920px-PhpMyAdmin-Logo.svg.png&f=1&nofb=1)
+ ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fde%2Fthumb%2Fe%2Fef%2FPhpMyAdmin-Logo.svg%2F1920px-PhpMyAdmin-Logo.svg.png&f=1&nofb=1)
 
  ```PhpMyAdmin``` is a free software tool written in ```PHP``` that is intended to handle the administration of a ```MySQL``` or MariaDB database server. You can use phpMyAdmin to perform most administration tasks, including creating a database, running queries, and adding user accounts.
 
@@ -355,5 +355,3 @@
  kjhdk
 
  </details>
-
-
