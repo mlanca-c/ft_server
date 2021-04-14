@@ -52,7 +52,8 @@
  </details>
 
 # Docker
- ![dockerimage](https://www.docker.com/sites/default/files/social/docker_facebook_share.png) [Dockerdocs](https://docs.docker.com/get-started/overview/)
+ ![dockerimage](https://www.docker.com/sites/default/files/social/docker_facebook_share.png) 
+ > [Dockerdocs](https://docs.docker.com/get-started/overview/)
 
  * Containerizes ```Applications```.
  * Runs each service with its own dependencies in separate ```containers```.
