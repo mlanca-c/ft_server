@@ -2,7 +2,6 @@
   42Cursus-ft_server/42Lisboa
 
 # Contents
- <details>
 
  1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
  2. [Definitions](https://github.com/mlanca-c/ft_server#Definitions)
@@ -19,8 +18,6 @@
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
     * [Docker Commands](https://github.com/mlanca-c/ft_server#Docker-Commands)
     * [Dockerfile](https://github.com/mlanca-c/ft_server#Dockerfile)
- 
- </details>
  
 # Intro
  > [subject](subject.pdf)
