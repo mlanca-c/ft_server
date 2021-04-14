@@ -171,7 +171,7 @@
 
  <details>
 
- ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fde%2Fthumb%2Fe%2Fef%2FPhpMyAdmin-Logo.svg%2F1920px-PhpMyAdmin-Logo.svg.png&f=1&nofb=1)
+ ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F95%2FPhpMyAdmin_logo.png%2F250px-PhpMyAdmin_logo.png&f=1&nofb=1)
 
  ```PhpMyAdmin``` is a free software tool written in ```PHP``` that is intended to handle the administration of a ```MySQL``` or MariaDB database server. You can use phpMyAdmin to perform most administration tasks, including creating a database, running queries, and adding user accounts.
 
