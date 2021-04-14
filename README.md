@@ -299,5 +299,5 @@
 
 # PhpMyAdmin
 
- PhpMyAdmin is a free software tool written in ```PHP``, intended to handle the administration of ```MySQL``` over the web. It supports a wide range of operations on MySQL ans Maria DB. Frequently used operations (managing databases, tables, columns, relations, indexes, users, permissions, etc) can be performed via the user interface, while you still have the ability to directly execute any SQL statement.  
+ PhpMyAdmin is a free software tool written in ```PHP```, intended to handle the administration of ```MySQL``` over the web. It supports a wide range of operations on MySQL ans Maria DB. Frequently used operations (managing databases, tables, columns, relations, indexes, users, permissions, etc) can be performed via the user interface, while you still have the ability to directly execute any SQL statement.  
 
