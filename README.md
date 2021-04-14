@@ -27,11 +27,15 @@
  * Apply ```SSL``` protocol.
  * Apply ```autoindex```.
 
+ **Operative System:** Debian Buster 
+ **Web Server:** Nginx
+ **Running Apps:** WordPress, phpMyAdmin, MySQL
+ **Protocol:** SSL
+
 ## Keywords
  > [Docker](https://docs.docker.com/get-started/overview/), [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server), [Dockerfile](https://docs.docker.com/engine/reference/builder/), [Debian Buster](https://www.debian.org/doc/), [Nginx](https://nginx.org/en/docs/), [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html), [WordPress](https://codex.wordpress.org/Main_Page), [phpMyAdmin](https://www.phpmyadmin.net/docs/), [MySQL](https://dev.mysql.com/doc/), [autoindex]().
 
  In the contents below I try to explain what are these keywords, and how they fit in this project. If you had no difficulties understanding these keywords with their links, then I suggest you to waste your time somewhere else, and not to read below this.
-
 
 # Web Server
  <details>
@@ -48,6 +52,8 @@
  * The web server must answer every HTTP request, at least with an error message.
 
  **On a web server, the HTTP server is responsible for processing and answering incoming requests.**
+
+ For this project, our Web server will be Nginx, which is a HTTP server.
 
  </details>
 
@@ -216,18 +222,21 @@
 
  -----------------------
 
+# Nginx
+
+ > Nginx is an open source ```web server```, that can also function as a ```proxy``` server for email (IMAP, POP3, and SMTP) and a ```reverse proxy``` and load balancer for HTTP, TCP, and UDP servers.
+
+ -----------------------
+
+ > [Proxy](https://airtame.com/blog/what-is-proxy/): gateway between you and the internet. It separates users from websites, secures data and betters network performance.
+
+ -----------------------
+
+ You can create an Nginx instance in a Docker container using the NGINX Open Source image from the Docker Hub.
+
 # Debian Buster
  You can install Docker Engine in different ways, depending on your needs:
  * Most users set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach, except for Raspbian.
  * Some users download the DEB package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
  * In testing and development environments, some users choose to use automated convenience scripts to install Docker. This is currently the only approach for Raspbian.
-
-
-# Nginx
-
- Nginx is an open source ```web server```.
-
- Nginx can also function as a ```proxy``` server for email (IMAP, POP3, and SMTP) and a ```reverse proxy``` and load balancer for HTTP, TCP, and UDP servers.
-
- > [Proxy](https://airtame.com/blog/what-is-proxy/): gateway between you and the internet. It separates users from websites, secures data and betters network performance.
 
