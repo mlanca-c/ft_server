@@ -299,10 +299,13 @@
 
 # PhpMyAdmin
 
+ <details>
  ![phpmyadmin](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fde%2Fthumb%2Fe%2Fef%2FPhpMyAdmin-Logo.svg%2F1920px-PhpMyAdmin-Logo.svg.png&f=1&nofb=1)
 
- ```PhpMyAdmin``` is a free software tool written in ```PHP``` that is intended to handle the administration of a MySQL or MariaDB database server. You can use phpMyAdmin to perform most administration tasks, including creating a database, running queries, and adding user accounts.
+ ```PhpMyAdmin``` is a free software tool written in ```PHP``` that is intended to handle the administration of a ```MySQL``` or MariaDB database server. You can use phpMyAdmin to perform most administration tasks, including creating a database, running queries, and adding user accounts.
 
  > [PHP](https://www.php.net/manual/en/index.php): PHP (Hypertext Preprocessor) is a widely-used open source general-purpose **scripting language** that is especially suited for web development and can be embedded into HTML. 
+
+ </details>
 
  
