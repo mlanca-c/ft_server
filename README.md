@@ -155,29 +155,39 @@
  # to run.
  $ docker run <image>		
  
- $ docker ps	# docker ps command lists all running containers and some basic information about them, such as
- 				# the container ID, the name of the image used to run the containers, the current status and the
- 				# names of the container.
+ # docker ps command lists all running containers and some basic information 
+ # about them, such as the container ID, the name of the image used to run the 
+ # containers, the current status and the names of the container.
+ $ docker ps
 
  CONTAINER ID	IMAGE	COMMAND				CREATED		STATUS		PORTS	NAMES
  79685ac413d	nginx	"nginx -g 'daemon of..."	7 seconds ago	Up 6 seconds	80/tcp	silly_sammet
  
- $ docker ps -a	# the -a option outputs all running as well as previously stopped or exited containers.
+ # the -a option outputs all running as well as previously stopped or exited 
+ # containers.
+ $ docker ps -a	
 
- $ docker stop <container name>	# docker stop command is used to stop a running contaier. 
- 								# You must provide either the container ID or the container name.
+ # docker stop command is used to stop a running contaier. 
+ # You must provide either the container ID or the container name.
+ $ docker stop <container name>
 
- $ docker rm <container name/container ID>	# docker rm command used to remove a stopped or exited container permanently.
+ # docker rm command used to remove a stopped or exited container permanently.
+ $ docker rm <container name/container ID>
 
- $ docker images	# docker images command shows a list of images and their sizes.
+ # docker images command shows a list of images and their sizes.
+ $ docker images
 
- $ docker rm <image>	# docker rmi command used to remove an image permanently.
- 						# first stop and delete all containers running of that image to remove it.
+ # docker rmi command used to remove an image permanently.
+ # First stop and delete all containers running of that image to remove it.
+ $ docker rm <image>	
 
- $ docker pull <image>	# docker pull command pulls the image from docker hub.
+ # docker pull command pulls the image from docker hub.
+ $ docker pull <image>
 
- $ docker exec <container name> <command>	# docker exec <container name> <command>
-```
+ # docker exec command
+ $ docker exec <container name> <command>	
+
+ ```
 
  Port Mapping:
  
