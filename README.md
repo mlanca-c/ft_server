@@ -48,7 +48,7 @@
  In the contents below I try to explain what are these keywords, and how they fit in this project. If you had no difficulties understanding these keywords with their links, then I suggest you to waste your time somewhere else, and not to read below this.
 
 # Definitions
-## Web Server
+### Web Server
  <details>
 
  >  ```Web Server``` is computer software and underlying hardware that accepts requests via ```HTTP``` (Hypertext Transfer Protocol), the network protocol created to distribute web pages, or its secure variant ```HTTPS``` (Hypertext Transfer Protocol Secure).
@@ -68,7 +68,7 @@
 
  </details>
 
-## Nginx
+### Nginx
 
  <details>
 
@@ -135,7 +135,7 @@
 
  </details>
 
-## Debian Buster
+### Debian Buster
 
  <details>
 
@@ -147,7 +147,7 @@
 
  > **Parent Image:** is the ``image`` that your ``image`` is based on. It refers to the contents of the ``FROM`` directive in the ``Dockerfile``. Each subsequent declaration in the Dockerfile modifies this ``parent image``. Most **Dockerfiles start from a parent image**, rather than a base image. However, the terms are sometimes used interchangeably.
 
-### Set up Dockerfile
+#### Set up Dockerfile
  
  **Synopsis:** FROM image:tag
  ```
@@ -157,7 +157,7 @@
 
  </details>
 
-## WordPress
+### WordPress
 
  <details>
  
@@ -167,7 +167,7 @@
 
  </details>
 
-## PhpMyAdmin
+### PhpMyAdmin
 
  <details>
 
@@ -179,7 +179,7 @@
 
  </details>
 
-## MySQL
+### MySQL
 
  <details>
 
@@ -189,7 +189,7 @@
 
  </details>
 
-## SSL Protocol
+### SSL Protocol
 
  <details>
  
@@ -197,7 +197,7 @@
 
  </details>
 
-## Autoindex
+### Autoindex
 
  <details>
  
