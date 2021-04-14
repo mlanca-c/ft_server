@@ -241,6 +241,8 @@
 
 # Nginx
 
+ <details>
+
  Nginx is an open source ```web server```, that can also function as a ```proxy``` server for email (IMAP, POP3, and SMTP) and a ```reverse proxy``` and load balancer for HTTP, TCP, and UDP servers.
 
  -----------------------
@@ -298,6 +300,9 @@
  ```
 
  [localhost:1234](http://localhost:1234)
+
+
+ </details>
 
 # PhpMyAdmin
 
