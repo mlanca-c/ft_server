@@ -331,7 +331,8 @@
  ```Vim
  docker run -p 1234:80 nginx
  ```
- [localhost:1234](localhost:1234)
+
+ [localhost:1234](http://localhost:1234)
 
 # Debian Buster
  You can install Docker Engine in different ways, depending on your needs:
