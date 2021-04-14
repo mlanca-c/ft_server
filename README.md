@@ -13,8 +13,12 @@
     * [Docker Commands](https://github.com/mlanca-c/ft_server#Docker-Commands)
     * [Dockerfile](https://github.com/mlanca-c/ft_server#Dockerfile)
  4. [Nginx](https://github.com/mlanca-c/ft_server#Nginx)
- 5. [PhpMyAdmin](https://github.com/mlanca-c/ft_server#PhpMyAdmin)
- 4. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
+ 5. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
+ 6. [WordPress](https://github.com/mlanca-c/ft_server#WordPress)
+ 7. [PhpMyAdmin](https://github.com/mlanca-c/ft_server#PhpMyAdmin)
+ 8. [MySQL](https://github.com/mlanca-c/ft_server#MySQL)
+ 9. [SSL Protocol](https://github.com/mlanca-c/ft_server#SLL-Protocol)
+ 10. [Autoindex](https://github.com/mlanca-c/ft_server#Autoindex)
 
  </details>
  
@@ -318,4 +322,12 @@
 
  </details>
 
- 
+# MySQL
+
+ <details>
+
+ kjhdk
+
+ </details>
+
+
