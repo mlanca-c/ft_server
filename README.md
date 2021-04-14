@@ -324,7 +324,11 @@
 
  ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cnx-software.com%2Fwp-content%2Fuploads%2F2019%2F07%2FDebian-10-Buster.png&f=1&nofb=1)
 
- > **Debian:** is a OS with a ```Linux kernel```. 
+ > **Debian:** is a OS with a ```Linux Kernel```.
+
+ In our server, Debian Buster will act as owr ```Parent Image```.
+
+ > **Parent Image:** is the ``image`` that your ``image`` is based on. It refers to the contents of the ``FROM`` directive in the ``Dockerfile``. Each subsequent declaration in the Dockerfile modifies this parent image. Most **Dockerfiles start from a parent image**, rather than a base image. However, the terms are sometimes used interchangeably.
 
 ## Set up Dockerfile
  
