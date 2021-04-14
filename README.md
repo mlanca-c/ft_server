@@ -161,7 +161,7 @@
 
  <details>
  
- ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.w.org%2Fabout%2Fimages%2Flogos%2Fwordpress-logo-stacked-rgb.png&f=1&nofb=1)
+ ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.webdancers.com%2Fwp-content%2Fuploads%2F2014%2F11%2Fwordpress.png&f=1&nofb=1)
 
  > **WordPress:** is a free and open-source content management system written in ```PHP``` and paired with a ```MySQL``` or MariaDB database.
 
