@@ -5,7 +5,6 @@
  <details>
 
  1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
-	* [Keywords](https://github.com/mlanca-c/ft_server#Keywords)
  2. [Web Server](https://github.com/mlanca-c/ft_server#Web-Server)
  3. [Docker](https://github.com/mlanca-c/ft_server#Docker)
     * [Containers](https://github.com/mlanca-c/ft_server#Containers)
@@ -309,6 +308,19 @@
 
 
  </details>
+
+# Debian Buster
+
+ ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cnx-software.com%2Fwp-content%2Fuploads%2F2019%2F07%2FDebian-10-Buster.png&f=1&nofb=1)
+
+## Set up Dockerfile
+ 
+ **Synopsis:** INSTRUCTION arguments
+ ```Vim
+ # FROM image:tag
+ FROM debian:buster
+ ```
+
 
 # PhpMyAdmin
 
