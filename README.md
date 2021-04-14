@@ -29,9 +29,9 @@
 
  -----------------------
 
- * **Operative System:** Debian Buster 
- * **Web Server:** Nginx
- * **Running Apps:** WordPress, phpMyAdmin, MySQL
+ * **Operative System (image):** Debian Buster 
+ * **Web Server (image):** Nginx
+ * **Running Apps (image):** WordPress, phpMyAdmin, MySQL
  * **Protocol:** SSL
 
  -----------------------
@@ -292,51 +292,12 @@
  ```
 
  ```Vim
- $ curl http://localhost
-
- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
- <html xmlns="http://www.w3.org/1999/xhtml">
-   <!--
-     Modified from the Debian original for Ubuntu
-     Last updated: 2016-11-16
-     See: https://launchpad.net/bugs/1288690
-   -->
-   <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-     <title>Apache2 Ubuntu Default Page: It works</title>
-     <style type="text/css" media="screen">
-   * {
-     margin: 0px 0px 0px 0px;
-     padding: 0px 0px 0px 0px;
-   }
- 
-   body, html {
-     padding: 3px 3px 3px 3px;
- 
-     background-color: #D8DBE2;
- 
-     font-family: Verdana, sans-serif;
-     font-size: 11pt;
-     text-align: center;
-   }
- 
-   div.main_page {
-     position: relative;
-     display: table;
- 
-     width: 800px;
- (...)
- ```
-
- ```Vim
  docker run -p 1234:80 nginx
  ```
 
  [localhost:1234](http://localhost:1234)
 
-# Debian Buster
- You can install Docker Engine in different ways, depending on your needs:
- * Most users set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach, except for Raspbian.
- * Some users download the DEB package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
- * In testing and development environments, some users choose to use automated convenience scripts to install Docker. This is currently the only approach for Raspbian.
+# PhpMyAdmin
+
+ PhpMyAdmin is a free software tool written in ```PHP``, intended to handle the administration of ```MySQL``` over the web. It supports a wide range of operations on MySQL ans Maria DB. Frequently used operations (managing databases, tables, columns, relations, indexes, users, permissions, etc) can be performed via the user interface, while you still have the ability to directly execute any SQL statement.  
 
