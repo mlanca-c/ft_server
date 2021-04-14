@@ -291,6 +291,43 @@
 
  ```
 
+ ```Vim
+ $ curl http://localhost
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+   <!--
+     Modified from the Debian original for Ubuntu
+     Last updated: 2016-11-16
+     See: https://launchpad.net/bugs/1288690
+   -->
+   <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <title>Apache2 Ubuntu Default Page: It works</title>
+     <style type="text/css" media="screen">
+   * {
+     margin: 0px 0px 0px 0px;
+     padding: 0px 0px 0px 0px;
+   }
+ 
+   body, html {
+     padding: 3px 3px 3px 3px;
+ 
+     background-color: #D8DBE2;
+ 
+     font-family: Verdana, sans-serif;
+     font-size: 11pt;
+     text-align: center;
+   }
+ 
+   div.main_page {
+     position: relative;
+     display: table;
+ 
+     width: 800px;
+ (...)
+ ```
+
 # Debian Buster
  You can install Docker Engine in different ways, depending on your needs:
  * Most users set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach, except for Raspbian.
