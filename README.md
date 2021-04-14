@@ -328,9 +328,8 @@
 
 ## Set up Dockerfile
  
- **Synopsis:** INSTRUCTION arguments
- ```Vim
- # FROM image:tag
+ **Synopsis:** FROM image:tag
+ ```
  FROM debian:buster
  ```
  The ```FROM``` instruction sets the ```base image``` for subsequent instructions. A valid ```Dockerfile``` must have FROM as its first instruction.
