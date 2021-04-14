@@ -12,6 +12,8 @@
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
     * [Docker Commands](https://github.com/mlanca-c/ft_server#Docker-Commands)
     * [Dockerfile](https://github.com/mlanca-c/ft_server#Dockerfile)
+ 4. [Nginx](https://github.com/mlanca-c/ft_server#Nginx)
+ 5. [PhpMyAdmin](https://github.com/mlanca-c/ft_server#PhpMyAdmin)
  4. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
 
  </details>
@@ -300,6 +302,7 @@
 # PhpMyAdmin
 
  <details>
+
  ![phpmyadmin](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fde%2Fthumb%2Fe%2Fef%2FPhpMyAdmin-Logo.svg%2F1920px-PhpMyAdmin-Logo.svg.png&f=1&nofb=1)
 
  ```PhpMyAdmin``` is a free software tool written in ```PHP``` that is intended to handle the administration of a ```MySQL``` or MariaDB database server. You can use phpMyAdmin to perform most administration tasks, including creating a database, running queries, and adding user accounts.
