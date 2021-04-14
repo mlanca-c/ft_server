@@ -152,8 +152,8 @@
  ```
  $ docker run <image>		# docker run command is used to run a contaier from 
   							# an image. 
- 							# Using default tag: latest 
- 							# as in <image:version> if you want another version to run.
+ 							# Using default tag: latest as in <image:version> 
+							# if you want another version to run.
 
  $ docker ps	# docker ps command lists all running containers and some basic information about them, such as
  				# the container ID, the name of the image used to run the containers, the current status and the
