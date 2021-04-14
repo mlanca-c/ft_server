@@ -243,7 +243,7 @@
 
  <details>
 
- ![nginx_image]()https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mimastech.com%2Fwp-content%2Fuploads%2F2016%2F12%2Fnginx_webserver_logo.png&f=1&nofb=1
+ ![nginx_image](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mimastech.com%2Fwp-content%2Fuploads%2F2016%2F12%2Fnginx_webserver_logo.png&f=1&nofb=1)
 
  Nginx is an open source ```web server```, that can also function as a ```proxy``` server for email (IMAP, POP3, and SMTP) and a ```reverse proxy``` and load balancer for HTTP, TCP, and UDP servers.
 
