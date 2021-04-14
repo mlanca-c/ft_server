@@ -199,6 +199,15 @@
 
 ## Dockerfile
 
+ > A Dockerfile is a file that automates the steps of creating a Docker image. A Dockerfile is similar to a Makefile.
+
+ **usage:**
+
+ ```
+ # Specifies a repository and tag at which to save the new image if the build succeeds.
+ $ docker build -t repository/tag .
+ ```
+
  Traditionally, a docker file is called ```Dockerfile``` and located in the root of the context. You use the -f flag with docker build to point to a Dockerfile anywhere in your file system.
 
 ### $ docker build
@@ -311,7 +320,11 @@
 
 # Debian Buster
 
+ <details>
+
  ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cnx-software.com%2Fwp-content%2Fuploads%2F2019%2F07%2FDebian-10-Buster.png&f=1&nofb=1)
+
+ > **Debian:** is a OS with a ```Linux kernel```. 
 
 ## Set up Dockerfile
  
@@ -320,7 +333,9 @@
  # FROM image:tag
  FROM debian:buster
  ```
+ The ```FROM``` instruction sets the ```base image``` for subsequent instructions. A valid ```Dockerfile``` must have FROM as its first instruction.
 
+ </details>
 
 # PhpMyAdmin
 
