@@ -210,14 +210,19 @@
 
  </details>
 
+ -----------------------
+
+ How I installed Docker on Ubuntu
+ [Install using the convenience script](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
+
+ -----------------------
+
 # Debian Buster
  You can install Docker Engine in different ways, depending on your needs:
  * Most users set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach, except for Raspbian.
  * Some users download the DEB package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
  * In testing and development environments, some users choose to use automated convenience scripts to install Docker. This is currently the only approach for Raspbian.
 
-## How I installed Docker on Ubuntu
- [Install using the convenience script](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
 
 # Nginx
 
