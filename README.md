@@ -212,9 +212,7 @@
 
  -----------------------
 
- **How I installed Docker on Ubuntu:**
- 
- [Install using the convenience script](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
+ **How I installed Docker on Ubuntu:** [convenience script](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
 
  -----------------------
 
