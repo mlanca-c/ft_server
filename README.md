@@ -275,6 +275,22 @@
  21d35338e000   nginx     "/docker-entrypoint.…"   17 seconds ago   Up 16 seconds   80/tcp    agitated_edison
  ```
 
+ After stopping the run command on the first tab (ctrl + c) the container is inactive. To check if there are any containers open, use docker ps.
+ ```Vim
+ $ docker ps
+
+
+ ```
+ 
+ To see closed containers, use docker ps -a
+ ```Vim
+ docker ps -a
+
+ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                     PORTS     NAMES
+ 21d35338e000   nginx     "/docker-entrypoint.…"   10 minutes ago   Exited (0) 9 minutes ago             agitated_edison
+
+ ```
+
 # Debian Buster
  You can install Docker Engine in different ways, depending on your needs:
  * Most users set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach, except for Raspbian.
