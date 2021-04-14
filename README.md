@@ -322,9 +322,9 @@
 
  <details>
 
- ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cnx-software.com%2Fwp-content%2Fuploads%2F2019%2F07%2FDebian-10-Buster.png&f=1&nofb=1)
-
  > **Debian:** is a OS with a ```Linux Kernel```.
+
+ ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cnx-software.com%2Fwp-content%2Fuploads%2F2019%2F07%2FDebian-10-Buster.png&f=1&nofb=1)
 
  In our server, Debian Buster will act as owr ```Parent Image```.
 
