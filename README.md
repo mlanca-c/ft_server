@@ -7,10 +7,12 @@
  1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
  2. [Web Server](https://github.com/mlanca-c/ft_server#Web-Server)
  3. [Docker](https://github.com/mlanca-c/ft_server#Docker)
+    <details>
     * [Containers](https://github.com/mlanca-c/ft_server#Containers)
     * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
     * [Docker Commands](https://github.com/mlanca-c/ft_server#Docker-Commands)
     * [Dockerfile](https://github.com/mlanca-c/ft_server#Dockerfile)
+    </details>
  4. [Nginx](https://github.com/mlanca-c/ft_server#Nginx)
  5. [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
  6. [WordPress](https://github.com/mlanca-c/ft_server#WordPress)
@@ -72,6 +74,7 @@
 
  * Containerizes ```Applications```.
  * Runs each service with its own dependencies in separate ```containers```.
+ * Replaces Virtual Machines.
 
 ## Containers
  Containers are completely isolated environments, as in they can have their own services, their own network interfaces, just like ```virtual machines```, with the exception that they all share the same OS ```kernel```. 
@@ -326,9 +329,9 @@
 
  ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cnx-software.com%2Fwp-content%2Fuploads%2F2019%2F07%2FDebian-10-Buster.png&f=1&nofb=1)
 
- In our server, Debian Buster will act as owr ```Parent Image```.
+ In our server, Debian Buster will act as a ```Parent Image```.
 
- > **Parent Image:** is the ``image`` that your ``image`` is based on. It refers to the contents of the ``FROM`` directive in the ``Dockerfile``. Each subsequent declaration in the Dockerfile modifies this parent image. Most **Dockerfiles start from a parent image**, rather than a base image. However, the terms are sometimes used interchangeably.
+ > **Parent Image:** is the ``image`` that your ``image`` is based on. It refers to the contents of the ``FROM`` directive in the ``Dockerfile``. Each subsequent declaration in the Dockerfile modifies this ``parent image``. Most **Dockerfiles start from a parent image**, rather than a base image. However, the terms are sometimes used interchangeably.
 
 ## Set up Dockerfile
  
@@ -356,6 +359,8 @@
 
  <details>
 
- kjhdk
+ ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmspcontrol.org%2Fwp-content%2Fuploads%2F2015%2F11%2Fmysql.png&f=1&nofb=1)
+
+ > **MySQL:** is an open source relational database management system (RDBMS) with a client-server model. RDBMS is a software or service used to create and manage databases based on a relational model.
 
  </details>
