@@ -249,28 +249,30 @@
 
  You can create an Nginx instance in a Docker container using the NGINX Open Source image from the Docker Hub.
 
+ docker pull will pull nginx image from docker hub.
  ```Vim
- # docker pull will pull nginx image from docker hub.
  $ docker pull nginx
+ ```
 
- # Checking to see if pull was succesfull
+ Checking to see if pull was succesfull
+ ```Vim
  $ docker images
 
  REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
  nginx        latest    62d49f9bab67   16 hours ago   133MB
+ ```
 
- # run a command in a new container. The docker run command first creates a 
- # writeable container layer over the specified image - in this case Nginx - and 
- # then starts it using the specified command.
+ Run a command in a new container. The docker run command first creates a writeable container layer over the specified image - in this case Nginx - and then starts it using the specified command.
+ ```Vim
  $ docker run nginx
+ ```
 
- # then if I open a new tab, while docker run command is still running I can see 
- # that the container is still running as well.
+ Then if I open a new tab, while docker run command is still running I can see that the container is still running as well.
+ ```Vim
  $ docker ps
 
  CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
  21d35338e000   nginx     "/docker-entrypoint.…"   17 seconds ago   Up 16 seconds   80/tcp    agitated_edison
-
  ```
 
 # Debian Buster
