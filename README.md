@@ -341,6 +341,16 @@
 
  </details>
 
+# WordPress
+
+ <details>
+ 
+ ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.w.org%2Fabout%2Fimages%2Flogos%2Fwordpress-logo-stacked-rgb.png&f=1&nofb=1)
+
+ > **WordPress:** is a free and open-source content management system written in ```PHP``` and paired with a ```MySQL``` or MariaDB database.
+
+ </details>>
+
 # PhpMyAdmin
 
  <details>
@@ -361,4 +371,18 @@
 
  > **MySQL:** is an open source relational database management system (RDBMS) with a client-server model. RDBMS is a software or service used to create and manage databases based on a relational model.
 
+ </details>
+
+# SSL Protocol
+
+ <details>
+ 
+ > **SSL (Secure Sockets Layer):** are protocols for establishing authenticated and encrypted links between networked computers. 
+
+ </details>
+
+# Autoindex
+
+ <details>
+ 
  </details>
