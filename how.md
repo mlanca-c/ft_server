@@ -32,7 +32,7 @@
 	* If <dest> doesn’t exist, it is created along with all missing directories in its path.
 
  ```
- COPY [--chown=<user>:<group>] <src>... <dest>```
+ COPY [--chown=<user>:<group>] <src>... <dest>
  COPY [--chown=<user>:<group>] ["<src>",... "<dest>"]
  ```
 
