@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    README.md                                          :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mlanca-c <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/04/20 12:58:57 by mlanca-c          #+#    #+#              #
+#    Updated: 2021/04/20 12:59:23 by mlanca-c         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 # ft_server
   42Cursus-ft_server/42Lisboa
 
@@ -145,14 +157,39 @@
  > **Parent Image:** is the ``image`` that your ``image`` is based on. It refers to the contents of the ``FROM`` directive in the ``Dockerfile``. Each subsequent declaration in the Dockerfile modifies this ``parent image``. Most **Dockerfiles start from a parent image**, rather than a base image. However, the terms are sometimes used interchangeably.
 
 #### Set up Dockerfile
- 
- **Synopsis:** FROM image:tag
- ```
+
+ In order to run a ```LAMP``` stack as a Docker container, you need to use a Linux based OS as a base image, in this case, ```Debian```.
+ After installing all the other images - like MySQL - the resulting image would be run as a container.
+
+ > **LAMP** stands for ```Linux```, ```Apache```, ```MySQL```, and ```PHP```. Together, they provide a proven set of software for delivering high-performance web applications. Each component contributes essential capabilities to the stack.
+
+ * [Step 1:]() Docker daemon searches for the image mentioned in the ```FROM``` instruction - ```debian buster```, if the image is not available locally it downloads from the Docker Hub.
+ * [Step 2:]() Update the ```OS``` and install ```nginx```.
+ * [Step 3:]() 
+
+ ------------------
+ > **FROM** instruction
+
+ ```Vim
+ # syntax: FROM image:tag
  FROM debian:buster
  ```
- The ```FROM``` instruction sets the ```base image``` for subsequent instructions. A valid ```Dockerfile``` must have FROM as its first instruction.
+ The ```FROM``` instruction sets the ```base image``` for subsequent instructions.
 
- </details>
+ A Docker base image is the basic image on which you add layers, and create a final image containig your app.
+
+ ------------------
+
+ > **RUN** instruction
+
+ The ```RUN``` instruction is used to execute ```shell command``` in the new layer and commit the result in a new Docker image. We can run separate long or complex RUN instruction in multiple lines using a backslash.
+
+ ```Vim
+ 
+ ```
+ ------------------
+
+
 
 ### WordPress
 
