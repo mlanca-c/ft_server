@@ -1,7 +1,9 @@
 # Steps of project
 
  * [Step 1:](https://github.com/mlanca-c/ft_server/blob/main/how.md#step-1) Create the ```base image```. In this case The OS - ```Debian Buster```.
- * [Step 2:](https://github.com/mlanca-c/ft_server/blob/main/how.md#step-2) Update the ```OS``` and install ```nginx```.
+ * [Step 2:](https://github.com/mlanca-c/ft_server/blob/main/how.md#step-2) Update the ```OS```.
+ * [Step 3:](https://github.com/mlanca-c/ft_server/blob/main/how.md#step-3) install ```nginx```.
+ * [Step :](https://github.com/mlanca-c/ft_server/blob/main/how.md#step-) ```run``` the server.
 
 # Step 1
  
@@ -59,5 +61,10 @@
  $ docker build [OPTIONS] PATH | URL | -
  $ docker build -t image .
  ```
+# Step 3
 
-
+ ```Dockerfile
+ # Install Nginx
+ RUN apt-get -y install nginx
+ ```
+ First things first, you should build the image and then run it/
