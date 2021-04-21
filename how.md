@@ -46,3 +46,18 @@
  The main purpose of a ```CMD``` is to provide defaults for an executing container. These defaults can include an executable, or they can omit the executable, in which case you must specify an ENTRYPOINT instruction as well.
 
  ```CMD ["executable","param1","param2"]```
+
+# Docker build
+
+ This is how I could see what the Dockerfile was doing through every instruction.
+
+ The ```docker build``` command builds Docker images from a Dockerfile and a “context”. A build’s context is the set of files located in the specified ```PATH``` or ```URL```.
+ The build process can refer to any of the files in the context. 
+ For example, your build can use a ````COPY```` instruction to reference a file in the context.
+
+ ```
+ $ docker build [OPTIONS] PATH | URL | -
+ $ docker build -t image .
+ ```
+
+
