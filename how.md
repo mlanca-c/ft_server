@@ -1,17 +1,18 @@
 # Steps of project
 
  * [Step 1:](https://github.com/mlanca-c/ft_server/blob/main/how.md#step-1) Create the ```base image```. In this case The OS - ```Debian Buster```.
- * [Step 2:](https://github.com/mlanca-c/ft_server/blob/main/how.md#step-2) Update the ```OS```.
- * [Step 3:](https://github.com/mlanca-c/ft_server/blob/main/how.md#step-3) install ```nginx```.
+ * [Step 2:](https://github.com/mlanca-c/ft_server/blob/main/how.md#step-2) Update ```Software Packages```.
+ * [Step 3:](https://github.com/mlanca-c/ft_server/blob/main/how.md#step-3) ```RUN``` apt-get install.
+ * [Step 4:](https://github.com/mlanca-c/ft_server/blob/main/how.md#step-4) Configure ```nginx ```.
  * [Step :](https://github.com/mlanca-c/ft_server/blob/main/how.md#step-) ```run``` the server.
 
-# Step 1
+# Installing Debian Buster
  
  Installing ```Debian Buster``` as the ```base image```, through the Dockerfile.
 
  > **Base Image:** is the basic image on which you add layers, and create your final image containing your app.
 
- The ```FROM``` instruction initializes a new build stage and sets the ```Base Image``` for subsequent instructions. As such, a valid ```Dockerfile``` must start with a FROM instruction. The image can be any valid image – it is especially easy to start by pulling an image from the Public Repositories.
+ The ```FROM``` instruction initializes a new build stage and sets the ```Base Image``` for subsequent instructions. As such, a valid ```Dockerfile``` must start with a ```FROM``` instruction. The image can be any valid image – it is especially easy to start by pulling an image from the Public Repositories.
 
  ```FROM [--platform=<platform>] <image>[:<tag>] [AS <name>]```
 
@@ -19,11 +20,34 @@
  FROM debian:buster
  ```
 
-# Step 2
+# Updating Software
+
+ Now you need to update ```Software Packages``` in Debian.
 
  The ```RUN``` instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the ```Dockerfile```.
 
  ```RUN <command>```
+
+# Step 3
+
+ ```Dockerfile
+ # Install Nginx
+ RUN apt-get -y install nginx
+ ```
+
+ For better understanding, try doing:
+ ```Shell
+ $ docker build -t nginx .
+ $ docker run -it --rm -p 80:80 nginx
+ ```
+
+ The ```docker build``` command builds Docker images from a Dockerfile and a “context”. A build’s context is the set of files located in the specified ```PATH``` or ```URL```.
+ The build process can refer to any of the files in the context. 
+ For example, your build can use a ````COPY```` instruction to reference a file in the context.
+
+ Flag -t: names the build.
+
+
 
  The ```COPY``` instruction copies new files or directories from ```<src>``` and adds them to the filesystem of the container at the path ```<dest>```.
 	* The <src> path must be inside the context of the build; you cannot COPY ../something /something, because the first step of a docker build is to send the context directory (and subdirectories) to the docker daemon.
@@ -33,7 +57,7 @@
 	* If <dest> does not end with a trailing slash, it will be considered a regular file and the contents of <src> will be written at <dest>.
 	* If <dest> doesn’t exist, it is created along with all missing directories in its path.
 
- ```
+ ```Dockerfile
  COPY [--chown=<user>:<group>] <src>... <dest>
  COPY [--chown=<user>:<group>] ["<src>",... "<dest>"]
  ```
@@ -53,23 +77,8 @@
 
  This is how I could see what the Dockerfile was doing through every instruction.
 
- The ```docker build``` command builds Docker images from a Dockerfile and a “context”. A build’s context is the set of files located in the specified ```PATH``` or ```URL```.
- The build process can refer to any of the files in the context. 
- For example, your build can use a ````COPY```` instruction to reference a file in the context.
-
  ```Shell
  $ docker build [OPTIONS] PATH | URL | -
  $ docker build -t image .
  ```
-# Step 3
 
- ```Dockerfile
- # Install Nginx
- RUN apt-get -y install nginx
- ```
-
- For better understanding, try doing:
- ```Shell
- $ docker build -t nginx .
- $ docker run -it --rm -p 80:80 nginx
- ```
