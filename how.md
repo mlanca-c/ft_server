@@ -15,7 +15,7 @@
 
  ```FROM [--platform=<platform>] <image>[:<tag>] [AS <name>]```
 
- ```vim
+ ```Dockerfile
  FROM debian:buster
  ```
 
@@ -57,7 +57,7 @@
  The build process can refer to any of the files in the context. 
  For example, your build can use a ````COPY```` instruction to reference a file in the context.
 
- ```
+ ```Shell
  $ docker build [OPTIONS] PATH | URL | -
  $ docker build -t image .
  ```
