@@ -67,4 +67,9 @@
  # Install Nginx
  RUN apt-get -y install nginx
  ```
- First things first, you should build the image and then run it/
+
+ For better understanding, try doing:
+ ```Shell
+ $ docker build -t nginx .
+ $ docker run -it --rm -p 80:80 nginx
+ ```
