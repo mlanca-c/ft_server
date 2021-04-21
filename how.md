@@ -28,6 +28,19 @@
 
  ```RUN <command>```
 
+ The commmands for updating and upgrading are:
+ ```Dockerfile
+ RUN apt-update
+ RUN apt-get upgrade -y
+ ```
+ After updating everything, you should install ```wget```.
+
+ The ```wget``` command will be used to get .tar files of phpMyAdmin and WordPress.
+ ```Dockerfile
+ RUN apt-get -y install wget
+ ```
+# 
+
 # Step 3
 
  ```Dockerfile
