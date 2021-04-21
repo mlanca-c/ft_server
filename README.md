@@ -143,41 +143,8 @@
  In our server, Debian Buster will act as a ```Parent Image```.
 
  > **Parent Image:** is the ``image`` that your ``image`` is based on. It refers to the contents of the ``FROM`` directive in the ``Dockerfile``. Each subsequent declaration in the Dockerfile modifies this ``parent image``. Most **Dockerfiles start from a parent image**, rather than a base image. However, the terms are sometimes used interchangeably.
-
-#### Set up Dockerfile
-
- In order to run a ```LAMP``` stack as a Docker container, you need to use a Linux based OS as a base image, in this case, ```Debian```.
- After installing all the other images - like MySQL - the resulting image would be run as a container.
-
- > **LAMP** stands for ```Linux```, ```Apache```, ```MySQL```, and ```PHP```. Together, they provide a proven set of software for delivering high-performance web applications. Each component contributes essential capabilities to the stack.
-
- * [Step 1:]() Docker daemon searches for the image mentioned in the ```FROM``` instruction - ```debian buster```, if the image is not available locally it downloads from the Docker Hub.
- * [Step 2:]() Update the ```OS``` and install ```nginx```.
- * [Step 3:]() 
-
- ------------------
- > **FROM** instruction
-
- ```Vim
- # syntax: FROM image:tag
- FROM debian:buster
- ```
- The ```FROM``` instruction sets the ```base image``` for subsequent instructions.
-
- A Docker base image is the basic image on which you add layers, and create a final image containig your app.
-
- ------------------
-
- > **RUN** instruction
-
- The ```RUN``` instruction is used to execute ```shell command``` in the new layer and commit the result in a new Docker image. We can run separate long or complex RUN instruction in multiple lines using a backslash.
-
- ```Vim
  
- ```
- ------------------
-
-
+ </details>
 
 ### WordPress
 
@@ -413,4 +380,38 @@
  **How I installed Docker on Ubuntu:** [convenience script](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
 
  -----------------------
+
+#### Set up Dockerfile
+
+ In order to run a ```LAMP``` stack as a Docker container, you need to use a Linux based OS as a base image, in this case, ```Debian```.
+ After installing all the other images - like MySQL - the resulting image would be run as a container.
+
+ > **LAMP** stands for ```Linux```, ```Apache```, ```MySQL```, and ```PHP```. Together, they provide a proven set of software for delivering high-performance web applications. Each component contributes essential capabilities to the stack.
+
+ * [Step 1:]() Docker daemon searches for the image mentioned in the ```FROM``` instruction - ```debian buster```, if the image is not available locally it downloads from the Docker Hub.
+ * [Step 2:]() Update the ```OS``` and install ```nginx```.
+ * [Step 3:]() 
+
+ ------------------
+ > **FROM** instruction
+
+ ```Vim
+ # syntax: FROM image:tag
+ FROM debian:buster
+ ```
+ The ```FROM``` instruction sets the ```base image``` for subsequent instructions.
+
+ A Docker base image is the basic image on which you add layers, and create a final image containig your app.
+
+ ------------------
+
+ > **RUN** instruction
+
+ The ```RUN``` instruction is used to execute ```shell command``` in the new layer and commit the result in a new Docker image. We can run separate long or complex RUN instruction in multiple lines using a backslash.
+
+ ```Vim
+ 
+ ```
+ ------------------
+
 
