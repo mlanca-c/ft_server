@@ -15,14 +15,14 @@
 # FROM <image>[:<tag>]
 FROM debian:buster
 
-# Update and Upgrade software packages in debian 
+# Update and Upgrade software packages in debian.
 # RUN instruction:
 # RUN <shell_command>
-RUN apt-get update
-RUN apt-get upgrade -y
+# The -y flag is for auto Yes.
+RUN apt-get update && \
+	apt-get upgrade -y && \
+	apt-get -y install wget \
+	nginx \
+	mariadb-server \
 
-# The wget command will be used ...
-RUN apt-get -y install wget
-
-# Install Nginx
-RUN apt-get -y install nginx
+# NGINX
