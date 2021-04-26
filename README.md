@@ -5,10 +5,10 @@
 
  1. [Intro](https://github.com/mlanca-c/ft_server#intro)
  2. [My First Web Server](https://github.com/mlanca-c/ft_server#my-first-web-server)
-  * [Operating System](https://github.com/mlanca-c/ft_server#operating-system)
-  * [Web Server](https://github.com/mlanca-c/ft_server#web-server)
-  * [Database Server](https://github.com/mlanca-c/ft_server#database-server)
-  * [Headless CMS](https://github.com/mlanca-c/ft_server#headless-cms)
+ 	* [Operating System](https://github.com/mlanca-c/ft_server#operating-system)
+	* [Web Server](https://github.com/mlanca-c/ft_server#web-server)
+	* [Database Server](https://github.com/mlanca-c/ft_server#database-server)
+	* [Headless CMS](https://github.com/mlanca-c/ft_server#headless-cms)
  3. [Docker](https://github.com/mlanca-c/ft_server#docker)
  4. [Dockerfile](https://github.com/mlanca-c/ft_server#dockerfile)
 
