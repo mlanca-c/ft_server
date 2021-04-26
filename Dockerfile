@@ -10,8 +10,17 @@
 #                                                                              #
 # **************************************************************************** #
 
+# The FROM instruction creates the base image for the container. In this case,
+# the base image will serve as the OS - Debian 10 or Debian Buster.
 FROM debian:buster
 
+# The RUN instruction runs a command om top of the current image.
+# First it updates and installs all software packages for Debian.
+# Then it installs wget. Wget command will be used to get .tar files of 
+# PhpMyAdmin and WordPress.
+# After that, it installs Nginx, MariaDB, and some packages for PHP.
+# php-fmp Fast Proccess Manager
+# The -y flag is for auto "yes".
 RUN apt-get update && \
 	apt-get upgrade -y && \
 	apt-get -y install wget -y \
@@ -19,8 +28,7 @@ RUN apt-get update && \
     mariadb-server \
     php-fpm \
     php-mysql \
-    php-mbstring \
-	vim
+    php-mbstring
 
 #NGINX
 COPY	srcs/nginx/server.conf /etc/nginx/sites-available/server.conf
