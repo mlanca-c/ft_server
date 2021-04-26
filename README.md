@@ -168,7 +168,7 @@
  ```
 
  * image: the image that the Dockerfile creates.
- * .: represents the directory where the build command is done. In this case, the directory where the Dockerfile is.
+ * .: represents the directory where the build command is done - in this case, the directory where the Dockerfile is.
 
 ## Dockerfile Instructions
 
