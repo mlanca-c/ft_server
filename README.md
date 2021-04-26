@@ -3,12 +3,14 @@
 
 # Contents
 
- 1. [Intro]()
- 2. [My First Web Server]()
- 3. [Operating System]()
- 4. [Web Server]()
- 5. [Database Server]()
- 6. [Headless CMS]()
+ 1. [Intro](https://github.com/mlanca-c/ft_server#intro)
+ 2. [My First Web Server](https://github.com/mlanca-c/ft_server#my-first-web-server)
+  * [Operating System](https://github.com/mlanca-c/ft_server#operating-system)
+  * [Web Server](https://github.com/mlanca-c/ft_server#web-server)
+  * [Database Server](https://github.com/mlanca-c/ft_server#database-server)
+  * [Headless CMS](https://github.com/mlanca-c/ft_server#headless-cms)
+ 3. [Docker](https://github.com/mlanca-c/ft_server#docker)
+ 4. [Dockerfile](https://github.com/mlanca-c/ft_server#dockerfile)
 
 # Intro
 
@@ -40,7 +42,7 @@
 
  In ft_server we will create a ```dynamic web server```.
 
-# Operating System
+## Operating System
 
  An Operating System is a software that manages computer hasrdware,  software resources, and provides common services for computer programs.
  * examples: windows, MacOS, Ubuntu, Debian, etc.
@@ -48,24 +50,24 @@
  **Kernel:** is a computer program at the core of a computer OS that has complete control over everything in the system.
  * examples: Linux kernel, etc.
 
-## Debian Buster
+### Debian Buster
 
  Debian is a OS, with a Linux kernel.
 
  * Buster: is the development codename for ```debian 10```. It is the curret stable distribution of Debian.
 
-# Web Server
+## Web Server
 
  A web server is hardware or software through which a computer can host a website.
  A server can be hosted in ```kernel mode``` or in ```user mode```.
  * **Kernel mode:** web server runs on top of a OS.
  * **User mode:** slower and less efective.
 
-## Nginx
+### Nginx
 
  Nginx is a open source web server written in C. It serves web content, and can act as a proxy.
 
-# Database Server
+## Database Server
 
  A database server is a computer system that provides other computers with services related to accessing and retrieving data from a database.
 
@@ -73,17 +75,17 @@
  * **MySQL:** Open source relational database management system.
  * **MariaDB:** community developed commercially supported fork of the MySQL.
 
-## PhpMyAdmin
+### PhpMyAdmin
 
  PhpMyAdmin is a free software for MySQL and MariaDB. It'a a portable web application written primarily in PHP.
  It has become one of the most popular MySQL administration tools, especially for web hosting services.
 
-# Headless CMS
+## Headless CMS
 
  A headless CMS is a backend only content management system that acts primarily as a content repository.
  It makes content accessible via an API for display on any device, without a built-in frontend or a presentation layer.
 
-## WordPress
+### WordPress
 
  WordPress is an open source content management system. As its core, WordPress is the simplest, most popular way to create your own website or blog.
 
