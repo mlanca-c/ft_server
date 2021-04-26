@@ -1,224 +1,121 @@
 # ft_server
-  42Cursus-ft_server/42Lisboa
+	42Cursus-ft_server/42Lisboa
 
 # Contents
 
- 1. [Intro](https://github.com/mlanca-c/ft_server#Intro)
- 2. [Definitions](https://github.com/mlanca-c/ft_server#Definitions)
-	* [Web Server](https://github.com/mlanca-c/ft_server#Web-Server)
-	* [Nginx](https://github.com/mlanca-c/ft_server#Nginx)
-	* [Debian Buster](https://github.com/mlanca-c/ft_server#Debian-Buster)
-	* [WordPress](https://github.com/mlanca-c/ft_server#WordPress)
-	* [PhpMyAdmin](https://github.com/mlanca-c/ft_server#PhpMyAdmin)
-	* [MySQL](https://github.com/mlanca-c/ft_server#MySQL)
-	* [SSL Protocol](https://github.com/mlanca-c/ft_server#SLL-Protocol)
-	* [Autoindex](https://github.com/mlanca-c/ft_server#Autoindex)
- 3. [Docker](https://github.com/mlanca-c/ft_server#Docker)
-    * [Containers](https://github.com/mlanca-c/ft_server#Containers)
-    * [Docker Architecture](https://github.com/mlanca-c/ft_server#Docker-Architecture)
-    * [Docker Commands](https://github.com/mlanca-c/ft_server#Docker-Commands)
-    * [Dockerfile](https://github.com/mlanca-c/ft_server#Dockerfile)
- 
+ 1. [Intro]()
+ 2. [My First Web Server]()
+ 3. [Operating System]()
+ 4. [Web Server]()
+ 5. [Database Server]()
+ 6. [Headless CMS]()
+
 # Intro
- > [subject](subject.pdf)
 
- This is a System Administration subject. You will discover Docker and you will set up your first ```web server```.
-
+ This is a System Administration subject. You will discover Docker and you will setup your first web server.
+ 
  Objectives:
  * Using ```Docker```, set up a ```web server``` with ```Nginx``` on ```Debian Buster```.
- * Run several services at the same time: ```WordPress``` website, ```phpMyAdmin```, and ```MySQL```.
+ * Run several services at the same time: ```WordPress``` website, ```PhpMyAdmin```, and ```MySQL```.
  * Apply ```SSL``` protocol.
  * Apply ```autoindex```.
 
- -----------------------
-
- * **Operative System (image):** Debian Buster 
- * **Web Server (image):** Nginx
- * **Running Apps (image):** WordPress, phpMyAdmin, MySQL
- * **Protocol:** SSL
-
- -----------------------
-
 ## Keywords
+
  > [Docker](https://docs.docker.com/get-started/overview/), [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server), [Dockerfile](https://docs.docker.com/engine/reference/builder/), [Debian Buster](https://www.debian.org/doc/), [Nginx](https://nginx.org/en/docs/), [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html), [WordPress](https://codex.wordpress.org/Main_Page), [phpMyAdmin](https://www.phpmyadmin.net/docs/), [MySQL](https://dev.mysql.com/doc/), [autoindex]().
 
- In the contents below I try to explain what are these keywords, and how they fit in this project. If you had no difficulties understanding these keywords with their links, then I suggest you to waste your time somewhere else, and not to read below this.
+# My First Web Server 
 
-# Definitions
-### Web Server
- <details>
+ * **Operating System:** Debian Buster
+ * **Web Server:** Nginx
+ * **Database Server:** MariaDB/MySQL
+ * **Server-Side Scripting Language:** PHP
+ Plus I will install and configure **WordPress** and **PhpMyAdmin**.
 
- >  ```Web Server``` is computer software and underlying hardware that accepts requests via ```HTTP``` (Hypertext Transfer Protocol), the network protocol created to distribute web pages, or its secure variant ```HTTPS``` (Hypertext Transfer Protocol Secure).
+ ```PHP```, is responsible fr generating dynamic web pages.
 
- To fetch a webpage, your browser sends a request to the web server, which searches for the requested file in its own ```storage space```. Upon finding the file, the server reads it, processes it as-needed, and sends it to the browser.
+ Static vs. Dynamic Web Pages:
+ * **Static:** one that is usually written in plain HTML and what is in the code of the page is what is displayed to the user.
+ * **Dynamic:** one that is written using a server=side scripting language such as PHP, ASP, JSP, etc.
 
- ![](http://www.clipartbest.com/cliparts/9c4/LnM/9c4LnMzgi.png)
- 
- As its name implies, ```HTTP``` specifies how to transfer hypertext (linked web documents) between two computers.
- * Only clients can make HTTP requests, and then only to servers. Servers can only respond to a client's HTTP request.
- * When requesting a file via HTTP, clients must provide the file's URL.
- * The web server must answer every HTTP request, at least with an error message.
+ In ft_server we will create a ```dynamic web server```.
 
- **On a web server, the HTTP server is responsible for processing and answering incoming requests.**
+# Operating System
 
- For this project, our Web server will be Nginx, which is a HTTP server.
+ An Operating System is a software that manages computer hasrdware,  software resources, and provides common services for computer programs.
+ * examples: windows, MacOS, Ubuntu, Debian, etc.
 
- </details>
+ **Kernel:** is a computer program at the core of a computer OS that has complete control over everything in the system.
+ * examples: Linux kernel, etc.
 
-### Nginx
+## Debian Buster
 
- <details>
+ Debian is a OS, with a Linux kernel.
 
- ![](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mimastech.com%2Fwp-content%2Fuploads%2F2016%2F12%2Fnginx_webserver_logo.png&f=1&nofb=1)
+ * Buster: is the development codename for ```debian 10```. It is the curret stable distribution of Debian.
 
- Nginx is an open source ```web server```, that can also function as a ```proxy``` server for email (IMAP, POP3, and SMTP) and a ```reverse proxy``` and load balancer for HTTP, TCP, and UDP servers.
+# Web Server
 
- -----------------------
+ A web server is hardware or software through which a computer can host a website.
+ A server can be hosted in ```kernel mode``` or in ```user mode```.
+ * **Kernel mode:** web server runs on top of a OS.
+ * **User mode:** slower and less efective.
 
- > [Proxy](https://airtame.com/blog/what-is-proxy/): gateway between you and the internet. It separates users from websites, secures data and betters network performance.
+## Nginx
 
- -----------------------
+ Nginx is a open source web server written in C. It serves web content, and can act as a proxy.
 
- You can create an Nginx instance in a Docker container using the NGINX Open Source image from the Docker Hub.
+# Database Server
 
- docker pull will pull nginx image from docker hub.
- ```Vim
- $ docker pull nginx
- ```
+ A database server is a computer system that provides other computers with services related to accessing and retrieving data from a database.
 
- Checking to see if pull was succesfull
- ```Vim
- $ docker images
+ Accessing a database can happen via frontend, running locally via a user's machine (e.g. phpMyAdmin).
+ * **MySQL:** Open source relational database management system.
+ * **MariaDB:** community developed commercially supported fork of the MySQL.
 
- REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
- nginx        latest    62d49f9bab67   16 hours ago   133MB
- ```
+## PhpMyAdmin
 
- Run a command in a new container. The docker run command first creates a writeable container layer over the specified image - in this case Nginx - and then starts it using the specified command.
- ```Vim
- $ docker run nginx
- ```
+ PhpMyAdmin is a free software for MySQL and MariaDB. It'a a portable web application written primarily in PHP.
+ It has become one of the most popular MySQL administration tools, especially for web hosting services.
 
- Then if I open a new tab, while docker run command is still running I can see that the container is still running as well.
- ```Vim
- $ docker ps
+# Headless CMS
 
- CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
- 21d35338e000   nginx     "/docker-entrypoint.…"   17 seconds ago   Up 16 seconds   80/tcp    agitated_edison
- ```
+ A headless CMS is a backend only content management system that acts primarily as a content repository.
+ It makes content accessible via an API for display on any device, without a built-in frontend or a presentation layer.
 
- After stopping the run command on the first tab (ctrl + c) the container is inactive. To check if there are any containers open, use docker ps.
- ```Vim
- $ docker ps
+## WordPress
 
+ WordPress is an open source content management system. As its core, WordPress is the simplest, most popular way to create your own website or blog.
 
- ```
- 
- To see closed containers, use docker ps -a
- ```Vim
- docker ps -a
-
- CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                     PORTS     NAMES
- 21d35338e000   nginx     "/docker-entrypoint.…"   10 minutes ago   Exited (0) 9 minutes ago             agitated_edison
-
- ```
-
- ```Vim
- docker run -p 1234:80 nginx
- ```
-
- [localhost:1234](http://localhost:1234)
-
-
- </details>
-
-### Debian Buster
-
- <details>
-
- > **Debian:** is a OS with a ```Linux Kernel```.
-
- ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cnx-software.com%2Fwp-content%2Fuploads%2F2019%2F07%2FDebian-10-Buster.png&f=1&nofb=1)
-
- In our server, Debian Buster will act as a ```Parent Image```.
-
- > **Parent Image:** is the ``image`` that your ``image`` is based on. It refers to the contents of the ``FROM`` directive in the ``Dockerfile``. Each subsequent declaration in the Dockerfile modifies this ``parent image``. Most **Dockerfiles start from a parent image**, rather than a base image. However, the terms are sometimes used interchangeably.
- 
- </details>
-
-### WordPress
-
- <details>
- 
- ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.webdancers.com%2Fwp-content%2Fuploads%2F2014%2F11%2Fwordpress.png&f=1&nofb=1)
-
- > **WordPress:** is a free and open-source content management system written in ```PHP``` and paired with a ```MySQL``` or MariaDB database.
-
- </details>
-
-### PhpMyAdmin
-
- <details>
-
- ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F95%2FPhpMyAdmin_logo.png%2F250px-PhpMyAdmin_logo.png&f=1&nofb=1)
-
- ```PhpMyAdmin``` is a free software tool written in ```PHP``` that is intended to handle the administration of a ```MySQL``` or MariaDB database server. You can use phpMyAdmin to perform most administration tasks, including creating a database, running queries, and adding user accounts.
-
- > [PHP](https://www.php.net/manual/en/index.php): PHP (Hypertext Preprocessor) is a widely-used open source general-purpose **scripting language** that is especially suited for web development and can be embedded into HTML. 
-
- </details>
-
-### MySQL
-
- <details>
-
- ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmspcontrol.org%2Fwp-content%2Fuploads%2F2015%2F11%2Fmysql.png&f=1&nofb=1)
-
- > **MySQL:** is an open source relational database management system (RDBMS) with a client-server model. RDBMS is a software or service used to create and manage databases based on a relational model.
-
- </details>
-
-### SSL Protocol
-
- <details>
- 
- > **SSL (Secure Sockets Layer):** are protocols for establishing authenticated and encrypted links between networked computers. 
-
- </details>
-
-### Autoindex
-
- <details>
- 
-
- 
- </details>
-
+ > [WordPress with PhpMyAdmin](https://wordpress.org/support/article/creating-database-for-wordpress/#using-phpmyadminA)
 
 # Docker
- ![](https://www.docker.com/sites/default/files/social/docker_facebook_share.png) 
+
+ ![](https://www.docker.com/sites/default/files/social/docker_facebook_share.png)
+
  > [Dockerdocs](https://docs.docker.com/get-started/overview/)
 
- * Containerizes ```Applications```.
- * Runs each service with its own dependencies in separate ```containers```.
- * Replaces Virtual Machines.
+ * Containerizes applications;
+ * Runs each service with its owns dependencies in separate ```containers```.
+ * Replaces ```Virtual Machines```.
 
 ## Containers
- Containers are completely isolated environments, as in they can have their own services, their own network interfaces, just like ```virtual machines```, with the exception that they all share the same OS ```kernel```. 
+
+ Containers are completely isolated environments, as in they can have their own services, their own network interfaces, just like ```virtual machines```, with the exception that they all share the same OS
 
  Containers have existed for years. What ```Docker``` offers is tools with several powerful functionalities, that make it easier for developers to be able to work with containers.
 
  -----------------------
- > An ```operating system``` (OS) is system software that manages computer hardware and software resources and provides common services for computer programs. Nearly every computer program requires an operating system to function. The two most common operating systems are ```Microsoft Windows``` and ```Apple's macOS```.
+ > An ```operating system``` (OS) is system software that manages computer hardware and software resources and provides common services for computer programs. Nearly every computer program requires an oper
 
  An OS consists of two things, an OS ```kernel``` and a set of ```software```.
 
- The OS ```kernel``` is responsible for interacting with the underlying hardware. While the OS kernel remains the same being, for example Linux, it's the ```software``` above it that makes these OS different. This software may consist of a different user interface, drivers, compilers, file managers, developer tools, etc.
+ The OS ```kernel``` is responsible for interacting with the underlying hardware. While the OS kernel remains the same being, for example Linux, it's the ```software``` above it that makes these OS differe
 
  So you have a common Linux ```kernel``` shared across all races, and some custom ```software``` that differentiates OS from each other.
 
  -----------------------
- **Docker containers share the underlying kernel**. So let's say we have a system with an ```Ubuntu``` OS with docker installed on it, docker can run any flavor of OS on top of it as long as they are all based on the same ```kernel```, in this case ```Linux```. So Docker can run on another distribution like ```Debian```, ```Fedora```, ```SUSE```. Each docker container only has the additional software that makes these OS different.
+ **Docker containers share the underlying kernel**. So let's say we have a system with an ```Ubuntu``` OS with docker installed on it, docker can run any flavor of OS on top of it as long as they are all b
 
  The main purpose of Docker is to package and containerize applications, and to ship them and run them as many times as you want.
 
@@ -228,44 +125,11 @@
 
  <details>
 
- |Virtual Machines	|Containers		|
+ |Virtual Machines  |Containers     |
  |:----------------:|:-------------:|
- |Designed by running software on top of physical servers to emulate a particular hardware system. A hypervisor, or a virtual machine monitor, is software, firmware, or hardware that creates and runs VMs. It’s what sits between the hardware and the virtual machine and is necessary to virtualize the server. Within each virtual machine runs a unique guest operating system. VMs with different operating systems can run on the same physical server — a UNIX VM can sit alongside a Linux VM, and so on. Each VM has its own binaries, libraries, and applications that it services, and the VM may be many gigabytes in size. Virtual machines and containers differ in several ways, but the primary difference is that containers provide a way to virtualize an OS so that multiple workloads can run on a single OS instance. With VMs, the hardware is being virtualized to run multiple OS instances. Containers’ speed, agility, and portability make them yet another tool to help streamline software development.|Containers sit on top of a physical server and its host OS — for example, Linux or Windows. Each container shares the host OS kernel and, usually, the binaries and libraries, too. Shared components are read-only. Containers are thus exceptionally “light”—they are only megabytes in size and take just seconds to start, versus gigabytes and minutes for a VM.|
+ |Designed by running software on top of physical servers to emulate a particular hardware system. A hypervisor, or a virtual machine monitor, is software, firmware, or hardware that creates and runs VMs.
 
  ![](https://s7280.pcdn.co/wp-content/uploads/2018/08/containers-vs-virtual-machines-1024x522.png)
-
- </details>
-
-## Docker Architecture
- Docker uses a client-server architecture. The client talks to the ```docker daemon```, which does the heavy lifting of building, running and distributing your ```docker container```.
- The client and the daemon can run on the same system, or you can connect a docker client to a remote docker daemon.
- They communicate using ```REST API```, over UNIX sockets on a network interface.
- ![](https://docs.docker.com/engine/images/architecture.svg)
-### Docker Daemon
-
- <details>
-
- The Docker Daemon ```(dockerd)``` listens for docker API requests and manages docker objects such as ```images```, ```containers```, ```networks```, and ```volumes```.
- A daemon can also communicate with other daemons to manage Docker services.
-
- </details>
-
-### Docker Client
-
- <details>
-
- The Docker Client ```(docker)``` is the primary way that many docker users interact with docker.
- When you use commands such as ```docker run```, the client sends these commands to dockerd, which caries them out.
- The docker comand uses the Docker API.
-
- </details>
-
-### Docker Registries
-
- <details>
-
- A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. You can even run your own private registry.
- When you use the ```docker pull``` or ```docker run``` commands, the required images are pulled from your configured registry. When you use ```docker push``` command, your image is pushed to your configured registry.
 
  </details>
 
@@ -274,144 +138,84 @@
  <details>
 
  When you use Docker, you are creating and using images, containers, networks, volumes, plugins, and other objects. This section is a brief overview of some of those objects.
- |Objects		|Description|
+ |Objects       |Description|
  |:------------:|:---------:|
- |Images		|An image is a read-only template with instructions for creating a Docker container. You might create your own images or you might only use those created by others and published in a ```registry```. To build your own image, you create a ```Dockerfile``` with a simple syntax for defining the steps needed to create the ```image``` and run it. Each instruction in a Dockerfile creates a layer in the image.|
- |Containers	|A container is a runnable instance of an ```image```. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new ```image``` based on its current state. A container is defined by its image as well as any configuration options you provide to it when you create or start it.|
+ |Images        |An image is a read-only template with instructions for creating a Docker container. You might create your own images or you might only use those created by others and published in a ```reg
+ |Containers    |A container is a runnable instance of an ```image```. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more netwo
 
- > An ```image``` is a package or a template. It s used to create one or more ```containers```, **containers are running instances of images** that are isolates and have theis own environments and set of processes.
-
- </details>
-
-## Docker Commands
- ```
- # docker run command is used to run a contaier from an image. 
- # Using default tag: latest as in <image:version> if you want another version 
- # to run.
- $ docker run <image>		
- 
- # docker ps command lists all running containers and some basic information 
- # about them, such as the container ID, the name of the image used to run the 
- # containers, the current status and the names of the container.
- $ docker ps
-
- CONTAINER ID	IMAGE	COMMAND				CREATED		STATUS		PORTS	NAMES
- 79685ac413d	nginx	"nginx -g 'daemon of..."	7 seconds ago	Up 6 seconds	80/tcp	silly_sammet
- 
- # the -a option outputs all running as well as previously stopped or exited 
- # containers.
- $ docker ps -a	
-
- # docker stop command is used to stop a running contaier. 
- # You must provide either the container ID or the container name.
- $ docker stop <container name>
-
- # docker rm command used to remove a stopped or exited container permanently.
- $ docker rm <container name/container ID>
-
- # docker images command shows a list of images and their sizes.
- $ docker images
-
- # docker rm command used to remove an image permanently.
- # First stop and delete all containers running of that image to remove it.
- $ docker rm <image>	
-
- # docker pull command pulls the image from docker hub.
- $ docker pull <image>
-
- # docker exec command
- $ docker exec <container name> <command>	
-
- ```
-
- Port Mapping:
- 
-
-## Dockerfile
-
- > A Dockerfile is a file that automates the steps of creating a Docker image. A Dockerfile is similar to a Makefile.
-
- **usage:**
-
- ```
- # Specifies a repository and tag at which to save the new image if the build succeeds.
- $ docker build -t repository/tag .
- ```
-
- Traditionally, a docker file is called ```Dockerfile``` and located in the root of the context. You use the -f flag with docker build to point to a Dockerfile anywhere in your file system.
-
-### $ docker build
-
- <details>
-
- The docker build command builds an image from a ```Dockerfile``` and a context. The build’s context is the set of files at a specified location ```PATH``` or ```URL```. The ```PATH``` is a directory on your local filesystem. The ```URL``` is a Git repository location.
- ```
- $ docker build .
- 
- Sending build context to Docker daemon 6.51 MB
- ...
- ```
- This example shows a build command that uses the current directory as context. The building is run by the Docker daemon, not by the CLI. The first thing a build process does is send the entire context (recursively) to the daemon. In most cases, it’s best to start with an empty directory as context and keep your Dockerfile in that directory. Add only the files needed for building the Dockerfile. 
-
- The Docker daemon runs the instructions in the Dockerfile one-by-one, committing the result of each instruction to a new image if necessary, before finally outputting the ID of your new image. The Docker daemon will automatically clean up the context you sent.
+ > An ```image``` is a package or a template. It s used to create one or more ```containers```, **containers are running instances of images** that are isolates and have theis own environments and set of p
 
  </details>
 
-### Format of a Dockerfile
+# Dockerfile
 
- <details>
+ Docker can build images automatically by reading the instructions from a ```Dockerfile```. 
+ A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. 
+ Using ```docker build``` users can create an automated build that executes several command-line instructions in succession.
+
+ > **docker build:** the docker build command builds Docker images from a Dockerfile and a “context”. A build’s context is the set of files located in the specified PATH or URL. The build process can refer to any of the files in the context. For example, your build can use a COPY instruction to reference a file in the context.
+
+ ```Shell
+ $ docker build [OPTIONS] PATH | URL | -
+ ```
+
+ In this work, I will use the instruction
+ ```Shell
+ docker build image .
+ ```
+
+ * image: the image that the Dockerfile creates.
+ * .: represents the directory where the build command is done. In this case, the directory where the Dockerfile is.
+
+## Dockerfile Instructions
+
+ The Dockerfile I created for this project has the following instructions:
+
+<details>
+
+### FROM
+
+ ```Dockerfile
+ FROM <image>[:<tag>]
+ ```
+
+ The ```FROM``` instruction initializes a new build stage and sets the ```Base Image``` for subsequent instructions. 
+
+### RUN
+
+ ```Dockerfile
+ RUN <command> 
+ ```
+
+ The ```RUN``` instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile.
+
+### COPY
  
+ ```Dockerfile
+ COPY [--chown=<user>:<group>] <src>... <dest>
  ```
- # Comment
- INSTRUCTION arguments
+
+ The ```COPY``` instruction copies new files or directories from <src> and adds them to the filesystem of the container at the path <dest>.
+
+### EXPOSE
+
+ ```Dockerfile
+ EXPOSE <port> [<port>/<protocol>...]
  ```
- The instruction is not case-sensitive. However, convention is for them to be UPPERCASE to distinguish them from arguments more easily.
 
- Docker runs instructions in a Dockerfile in order. A Dockerfile must begin with a ```FROM``` instruction.The FROM instruction specifies the ```Parent Image``` from which you are building. FROM may only be preceded by one or more ```ARG``` instructions, which declare arguments that are used in ```FROM``` lines in the Dockerfile.
+ The ```EXPOSE``` instruction informs Docker that the container listens on the specified network ports at runtime.
+ You can specify whether the port listens on TCP or UDP, and the default is TCP if the protocol is not specified.
 
- > Parent Image: An image’s parent image is the image designated in the ```FROM``` directive in the image’s Dockerfile. All subsequent commands are based on this parent image. A Dockerfile with the ```FROM scratch``` directive uses no parent image, and creates a base image.
+### CMD
 
- > ARG: The ARG instruction defines a variable that users can pass at build-time to the builder with the ```docker build``` command using the ```--build-arg <varname>=<value>``` flag. A Dockerfile may include one or more ARG instructions.
-
- </details>
-
- -----------------------
-
- **How I installed Docker on Ubuntu:** [convenience script](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
-
- -----------------------
-
-#### Set up Dockerfile
-
- In order to run a ```LAMP``` stack as a Docker container, you need to use a Linux based OS as a base image, in this case, ```Debian```.
- After installing all the other images - like MySQL - the resulting image would be run as a container.
-
- > **LAMP** stands for ```Linux```, ```Apache```, ```MySQL```, and ```PHP```. Together, they provide a proven set of software for delivering high-performance web applications. Each component contributes essential capabilities to the stack.
-
- * [Step 1:]() Docker daemon searches for the image mentioned in the ```FROM``` instruction - ```debian buster```, if the image is not available locally it downloads from the Docker Hub.
- * [Step 2:]() Update the ```OS``` and install ```nginx```.
- * [Step 3:]() 
-
- ------------------
- > **FROM** instruction
-
- ```Vim
- # syntax: FROM image:tag
- FROM debian:buster
+ ```Dockerfile
+ CMD <command>
  ```
- The ```FROM``` instruction sets the ```base image``` for subsequent instructions.
 
- A Docker base image is the basic image on which you add layers, and create a final image containig your app.
+There can only be one ```CMD``` instruction in a Dockerfile. 
+If you list more than one CMD then only the last CMD will take effect.
+The main purpose of a CMD is to provide defaults for an executing container.
+These defaults can include an executable, or they can omit the executable, in which case you must specify an ENTRYPOINT instruction as well.
 
- ------------------
-
- > **RUN** instruction
-
- The ```RUN``` instruction is used to execute ```shell command``` in the new layer and commit the result in a new Docker image. We can run separate long or complex RUN instruction in multiple lines using a backslash.
-
- ```Vim
- 
- ```
- ------------------
-
+</details>
 
