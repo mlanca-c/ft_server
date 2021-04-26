@@ -1,5 +1,5 @@
 # ft_server
-	42Cursus-ft_server/42Lisboa
+ 42Cursus-ft_server/42Lisboa
 
 # Contents
 
@@ -24,7 +24,7 @@
 
 ## Keywords
 
- > [Docker](https://docs.docker.com/get-started/overview/), [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server), [Dockerfile](https://docs.docker.com/engine/reference/builder/), [Debian Buster](https://www.debian.org/doc/), [Nginx](https://nginx.org/en/docs/), [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html), [WordPress](https://codex.wordpress.org/Main_Page), [phpMyAdmin](https://www.phpmyadmin.net/docs/), [MySQL](https://dev.mysql.com/doc/), [autoindex]().
+ > [Docker](https://docs.docker.com/get-started/overview/), [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server), [Dockerfile](https://docs.docker.com/engine/reference/builder/), [Debian Buster](https://www.debian.org/doc/), [Nginx](https://nginx.org/en/docs/), [SSL Protocol](https://www.csoonline.com/article/3246212/what-is-ssl-tls-and-how-this-encryption-protocol-works.html), [WordPress](https://codex.wordpress.org/Main_Page), [phpMyAdmin](https://www.phpmyadmin.net/docs/), [MySQL](https://dev.mysql.com/doc/).
 
 # My First Web Server 
 
@@ -32,9 +32,10 @@
  * **Web Server:** Nginx
  * **Database Server:** MariaDB/MySQL
  * **Server-Side Scripting Language:** PHP
+
  Plus I will install and configure **WordPress** and **PhpMyAdmin**.
 
- ```PHP```, is responsible fr generating dynamic web pages.
+ ```PHP```, is responsible for generating dynamic web pages.
 
  Static vs. Dynamic Web Pages:
  * **Static:** one that is usually written in plain HTML and what is in the code of the page is what is displayed to the user.
@@ -163,7 +164,7 @@
 
  In this work, I will use the instruction
  ```Shell
- docker build image .
+ $ docker build image .
  ```
 
  * image: the image that the Dockerfile creates.
@@ -221,3 +222,4 @@ These defaults can include an executable, or they can omit the executable, in wh
 
 </details>
 
+# LEMP stack on debian buster
