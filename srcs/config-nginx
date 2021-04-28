@@ -1,0 +1,110 @@
+# All the configuration for nginx lives in the directory /etc/nginx/ with the
+# /etc/nginx/nginx.conf file at the heart. 
+# 1. nginx.conf:						The main configuration file of Nginx 
+# 										server.
+# 2. conf.d: 							The directory where user specific 
+# 										configurations are stored.
+# 3. site-available and sites-enabled: 	The directory where user specific 
+# 										configurations are stored for Debian 
+# 										like systems.
+#
+# sites-enabled/default: 
+# server {
+#	listen 80 default_server;
+# 	listen [::]:80 default_server;
+#
+#	root /var/www/html;
+#	index index.html index.htm index.nginx-debian.html;
+#	server_name _;
+#
+#	location / {
+#		try_files $uri $uri/ =404;
+#	}
+# }
+# 
+# Each single line ending with a semi-colon (;) is called a directive.
+# simple directive:	name of the directive followed by a list of parameters.
+# block directive:	made up to the directive name, followed by a pair of curly
+# 					braces ({) within which there are multiple single
+# 					directives.
+#
+# Ngin has server blocks that use the server_name and listen directives to bind
+# to tcp sockets.
+# There can be multiple server blocks that function as separate virtual web 
+# server instances.
+# 
+# The main server block directives that Nginx is concerned with during this
+# process are the listen directive, and the server_name directive.
+# The listen directive typically defines which IP address and port that the
+# server block will respond to.
+# It is important to understand that Nginx will only evaluate the server_name
+# directive when it needs to distinguish between server blocks that match to the
+# same level of specificity in the listen directive.
+#
+# root /var/www/html;	nginx will look inside the directory of the server to
+# 						look for files to serve the HTTP requests made to 
+# 						https://localhost/
+# Placing a root directive in the server block makes the root directive
+# available to all location blocks within the same server block.
+#
+# server_tokens off;	directive is responsible for displaying the Nginx
+# 						version number and Operating system on error pages and
+# 						in the “Server” HTTP response header field.
+#
+# index random index.php;	The index directive defines the index file’s name.
+# 							The ndex is by default the main page of the
+# 							directory.
+#
+# Secure Socket Layer (SSL) 
+# ssl_certificate (should be pointed to the location of the created Certificate
+# file).
+# ssl_certificate_key (should be pointed to the location of the Private Key
+# generated along with the CSR that was used during Certificate activation).
+#
+#
+# The location block enables you to handle several types of URIs/routes, within
+# a server block.
+# location [<modifier>] <URI> {...}
+# location / {...}		location matching all requests.
+# location ~ ... {...}	case sensitive modifier.
+#
+# autoindex on;		Enables Nginx auto indexing to browse your files from the
+# 					web browser.
+
+server {
+	listen 80;
+	root /var/www/html;
+	server_tokens off;
+	index random index.php
+	server_name localhost;
+	location / {
+		autoindex on;
+	}
+}
+
+#server {
+#		listen 80;
+#
+#		root /var/www/html;
+#		server_tokens off;
+#	index random index.php;
+#	server_name localhost;
+#
+#	listen 443 ssl;
+#	ssl_certificate /root/mkcert/localhost.pem;
+#	ssl_certificate_key /root/mkcert/localhost-key.pem;
+#
+#	location / {
+#		autoindex on;
+#		try_files $uri $uri/ =404;
+#	}
+#
+#	location ~ \.php$ {
+#			include snippets/fastcgi-php.conf;
+#			fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+#	}
+#
+#	location ~ /\.ht {
+#			deny all;
+#	}
+#}
