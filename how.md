@@ -92,6 +92,6 @@
 
  ```Shell
  $ docker build [OPTIONS] PATH | URL | -
- $ docker build -t image .
+ $ docker build -t image . # Name and optionally a tag in the 'name:tag' format
  ```
 
