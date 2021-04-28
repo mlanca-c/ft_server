@@ -159,16 +159,13 @@
  > **docker build:** the docker build command builds Docker images from a Dockerfile and a “context”. A build’s context is the set of files located in the specified PATH or URL. The build process can refer to any of the files in the context. For example, your build can use a COPY instruction to reference a file in the context.
 
  ```Shell
- $ docker build [OPTIONS] PATH | URL | -
+ $ docker build -t <name of the docker image>:<tag> <path of the Dockerfile>
  ```
 
- In this work, I will use the instruction
+ In this work, I will use the instruction:
  ```Shell
  $ docker build image .
  ```
-
- * image: the image that the Dockerfile creates.
- * .: represents the directory where the build command is done - in this case, the directory where the Dockerfile is.
 
 ## Dockerfile Instructions
 
