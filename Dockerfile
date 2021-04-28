@@ -1,3 +1,14 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Dockerfile                                         :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mlanca-c <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/04/28 12:18:42 by mlanca-c          #+#    #+#              #
+#    Updated: 2021/04/28 12:20:27 by mlanca-c         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
 # The FROM instruction creates the base image for the container. In this case,
 # the base image will serve as the OS - Debian 10 or Debian Buster.
