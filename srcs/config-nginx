@@ -70,15 +70,31 @@
 #
 # autoindex on;		Enables Nginx auto indexing to browse your files from the
 # 					web browser.
+#
+# try_files				Checks the existence of files in the specified order and
+# 						uses the first found file for request processing.
+#
+# try_files $uri $uri/ =404;
 
 server {
 	listen 80;
 	root /var/www/html;
 	server_tokens off;
+
+	listen 443 ssl;
+	ssl_certificate /etc/nginx/ssl/ssl-bundle.crt;
+	ssl_certificate_key /etc/nginx/ssl/ssl-bundle.key;
+
 	index random index.php
 	server_name localhost;
 	location / {
 		autoindex on;
+		try_files $uri $uri/ =404;
+	}
+
+	location ~ \.php {
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
 	}
 }
 
@@ -100,8 +116,6 @@ server {
 #	}
 #
 #	location ~ \.php$ {
-#			include snippets/fastcgi-php.conf;
-#			fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
 #	}
 #
 #	location ~ /\.ht {
